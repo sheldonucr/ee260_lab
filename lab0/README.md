@@ -21,13 +21,25 @@ The college provides three computational servers for student use both on and off
 
 To access these servers on Windows, you must first download and install an SSH client (putty) and an X Server (Xming).  Once you have finished downloading the links below.
 
-In our lab (WCH125), you can use PUTTY and you need to use with XMing.
+In our lab (WCH125), `putty` and `Xming` already installed.
 
-An official ENGR SSH/Xming instruction can be found at [ here ](http://systems.engr.ucr.edu/tutorials/computational.html)
+To install `putty` and `Xming` in your computer, an instruction can be found at [ here ](http://www.geo.mtu.edu/geoschem/docs/putty_install.html)
 
-For putty instruction can be found at [ here ](http://www.geo.mtu.edu/geoschem/docs/putty_install.html)
 
-You need to run `Xming` first and then `putty` later
+#### Configure `Xming` and `putty`
+
+Find `Xming` in the start menu, and launch first. You should be able to find `Xming` in the system tray.
+
+Then, you find `putty` and launch, the the following screen will be popped up.
+and you can put hostname `storm.engr.ucr.edu` and put your user id. The most important thing is to enable X11 forwarding in the `putty`.
+
+![putty1](images/lab0-03.png)
+![putty1](images/lab0-04.png)
+![putty1](images/lab0-05.png)
+![putty1](images/lab0-06.png)
+
+
+Again, you need to run `Xming` first and then `putty` later
 
 ### OSX/Linux
 
