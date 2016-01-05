@@ -52,8 +52,8 @@ We already preconfigured every IC design environment, so you don't need to set a
 
 Once you see the following screen, then it's ready for next lab.
 
-[Synopsys launch!](lab0/images/lab0-01.png)
+![Synopsys launch](images/lab0-01.png)
 
-[Synopsys cdesigner!](images/lab0-02.png)
+![Synopsys cdesigner](images/lab0-02.png)
 
 If you have any question, then you can post your question at issue section in this github.
