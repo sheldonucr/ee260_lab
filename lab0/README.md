@@ -38,6 +38,6 @@ We already preconfigured every IC design environment, so you don't need to set a
 
 `cdesigner&`
 
-[[https://github.com/tkimva/ucr-eecs168/blob/master/lab0/images/lab0-01.png]]
+![Synopsys](lab0/images/lab0-01.png)
 
 [[https://github.com/tkimva/ucr-eecs168/blob/master/lab0/images/lab0-02.png]]
