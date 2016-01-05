@@ -2,6 +2,7 @@
 
 Every communication will be at https://github.com/tkimva/ucr-eecs168. Please use GITHUB page instead of email to ask any question to TA. Labs must be finished on-time. Late labs will not be accepted. A lab report, using the specified lab report format is required for all lab assignments, including tutorials, and is due at the beginning of the following lab period after the lab is due. Individual labs may also require additional information such as schematics, layout, or a summary of results. Please be sure to include this information in your lab report. 5 lab reports are required to turn in and total scores are 100. Group work (limit 2) is allowed but individual each student is required lab report submission and those lab reports should not be the same in the group.
 
+
 | Week | Date | Description	Points |
 | - | - | - |
 | Week 1	|	Pre-Lab - ENGR account checkup / Linux System Basic	| |
