@@ -31,3 +31,9 @@ For example
 `ssh -Y tkim@storm.engr.ucr.edu`
 
 If you have any question, then you can post your question at issue section in this github.
+
+## Check Synopsys Galaxy Custom Designer
+
+We already preconfigured every IC design environment, so you don't need to set any environment. You can check toolchain is correctly working.
+
+`cdesigner&`
