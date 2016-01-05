@@ -37,3 +37,7 @@ If you have any question, then you can post your question at issue section in th
 We already preconfigured every IC design environment, so you don't need to set any environment. You can check toolchain is correctly working.
 
 `cdesigner&`
+
+[[https://github.com/tkimva/ucr-eecs168/blob/master/lab0/images/lab0-01.png]]
+
+[[https://github.com/tkimva/ucr-eecs168/blob/master/lab0/images/lab0-02.png]]
