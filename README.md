@@ -8,7 +8,7 @@ Every communication will be at https://github.com/tkimva/ucr-eecs168. Please use
 
 | Week | Date | Description	Points |
 | ---- | ---- | ------------------ |
-| Week 1	|	Pre-Lab - ENGR account checkup / Linux System Basic	| |
+| Week 1	|	[https://github.com/tkimva/ucr-eecs168/tree/master/lab0 Pre-Lab - ENGR account checkup / Linux System Basic]	| |
 | Week 2	| Lab/Tutorial 1 - Synopsys Schematic Design (Galaxy Custom Designer)/ Pre-Simulation (HSPICE).	|10|
 | Week 3	| Lab/Tutorial 2 - Synopsys Layout Design (Galaxy Custom Designer) / Design Rule Check (DRC) / Verification (LVS) / Post-Simulation (HSPICE). Lab report due at the end of lab. | 15 |
 |Week 4		 | Lab/Tutorial 3 - Simple Hierarchical IC Design (Target Circuit TBA). Lab report due at the end of lab.	| 25 |
