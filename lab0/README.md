@@ -7,11 +7,11 @@ ENGR account is different than your UCR NetID. It's not combination with number 
 
 For GPP/UCR Extension students, please email to systems@engr.ucr.edu with the following information
 
-Name
-Student type: IEP or GPP
-Extension ID
-UCR NetID
-Gmail address
+- Name
+- Student type: IEP or GPP
+- Extension ID
+- UCR NetID
+- Gmail address
 
 ## ENGR X-windows systems access
 
