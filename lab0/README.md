@@ -5,13 +5,19 @@
 
 ENGR account is different than your UCR NetID. It is not combination with numbers (tkim049, this is UCR NetID). If you never activated your ENGR account, or you have an ENGR account but you forgot your password, then please visit [here](https://www.engr.ucr.edu/secured/systems/login.php) and create your one.
 
-For GPP/UCR Extension students, please email to systems@engr.ucr.edu with the following information
+For GPP/UCR Extension students, please go to ECE systems (WCH107) and request your temporarily account in person.
 
-- Name
-- Student type: IEP or GPP
-- Extension ID
-- UCR NetID
-- Gmail address
+## GitHUB
+
+For this class, you need to register and keep watching this lab repository. Please register github first.
+
+go to [github.com](http://github.com) and follow the screenshots below.
+
+![github](images/lab0-07.png)
+
+After you register, you need to login and go to our lab repository [github.com/tkimva/ucr-eecs168](https://github.com/tkimva/ucr-eecs168). You need to press watching and star as seen below.
+
+![github](images/lab0-08.png)
 
 ## ENGR X-windows systems access
 
