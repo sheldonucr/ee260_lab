@@ -1,28 +1,28 @@
 # Lab/Tutorial 1
 
-In this tutorial, some contexts use Synopsys tutorials from Vazgen Melikyan (Synopsys) and Hamid Nahmoodi (SFSU). All of tools and PDK are given thru Synopsys University Program.
+In this tutorial, some contexts use Synopsys tutorials from Vazgen Melikyan (Synopsys) and Hamid Nahmoodi (SFSU). All the tools and PDK are given thru Synopsys University Program.
 
 ## Introduction
 
 In this tutorial, you will learn how to draw custom IC layout and simulate your design using 28/32/90nm technologies in Synopsys Custom Design Tools. This tutorial includes the detail steps of schematic, layout, and simulation of designs.
 
-You need to have some basic skill for Linux Environment, so you are able to manage the design file (creation/rename/modify folders and files). If you want to know how to use Linux, there are many of tutorials available on the web. For example, there is short Linux cheat sheets [here](http://www.nixtutor.com/linux/all-the-best-linux-cheat-sheets/) and long tutorials [here](http://tldp.org/LDP/gs/node5.html)
+You need to have some basic skill for Linux environment to manage the design file (creation/rename/modify folders and files). If you want to know how to use Linux, there are many of tutorials available on the web. For example, there is small Linux cheat sheets [here](http://www.nixtutor.com/linux/all-the-best-linux-cheat-sheets/) and long tutorials [here](http://tldp.org/LDP/gs/node5.html)
 
 ![full custom design flow](images/fig1.png)
 
-_**Fig. 1 full custom design flow**_
+_**Fig. 1 Full custom design flow**_
 
 
 Fig. 1 shows the full custom design flow with Synopsys design tools. The first three parts of flow are covered in our lab1 and the rest four parts will be covered in the lab2. In this three parts, you design a CMOS inverter in Custom Designer, simulate the circuit in HSPICE, measure and view waveforms of simulation results in Custom Waveview.
 
-For the rest four parts (Lab 2), you will use Custom Designer to create a layout with given technology from Synopsys. IC Validator will be used to verify your design ([DRC](https://en.wikipedia.org/wiki/Design_rule_checking)) and check if your layout matches your schematic ([LVS](https://en.wikipedia.org/wiki/Layout_Versus_Schematic)). In the last two steps, you can do parasitic extraction of your circuit and do simulation again. Finally, you can compare your simulation and post-simulation. This is our lab 1 and 2. In this tutorial, you will complete the first three steps.
+For the rest four parts (Lab 2), you will use Custom Designer to create a layout with given technology from Synopsys. IC Validator will be used to verify your design ([DRC](https://en.wikipedia.org/wiki/Design_rule_checking)) and check if your layout matches its schematic ([LVS](https://en.wikipedia.org/wiki/Layout_Versus_Schematic)). In the last two steps, you can do the parasitic extraction of your circuit and do simulation again. Finally, you can compare your simulation and post-simulation. This is our lab 1 and 2. In this tutorial, you will complete the first three steps.
 
 ## Part 1: Setup your design workspace
 
 You need to login our `storm.engr.ucr.edu` server first. If you do not know how to connect our server, please check out [lab1](../lab0)
 
 
-You can use your home folder (`~ or /home/[Account Name]`, in the example, [Account Name will be `tkim` or `zsun`, you need to use your own account) or you can create new folder to have your design for this eecs168 course. To create your design folder you need to type followings. The first command let you move your home folder, and `mkdir` command is to create your folder.
+You can use your home folder (`~ or /home/[Account Name]`, in the example, [Account Name will be `tkim` or `zsun`, you need to use your own account) or you can create a new folder to have your design for this eecs168 course. To create your design folder, you need to type followings. The first command let you move your home folder, and `mkdir` command is to create your folder.
 
 ```
 cd ~
@@ -33,7 +33,7 @@ Once you generate your workspace folder, you need to go to the folder
 ```
 cd eecs168
 ```
-You install Synopsys PDK ([Process Design Kit](https://en.wikipedia.org/wiki/Process_design_kit)) (technology library into your workspace as follows.
+Then, you need to install Synopsys PDK ([Process Design Kit](https://en.wikipedia.org/wiki/Process_design_kit)) (technology library into your workspace as follows.
 
 For 32/28 nm Synopsys PDK
 ```
@@ -45,9 +45,9 @@ For 90nm Synopsys PDK
 cp /usr/local/synopsys/pdk/SAED_PDK90nm/install/lib.defs ./
 ```
 
-You can choose either 32/28 nm PDK or 90nm. In this class, we recommend 90nm PDK for your class work. You can choose 32/28 nm PDK but it might be need more strict rule on DRC, so you need to be more careful for your layout design for 32/28nm PDK. You only need one time setup for above procedure, you do not need to redo above command `cp` for next time.
+You can choose either 32/28 nm PDK or 90nm. In this class, 90nm PDK is recommended for your class work. You can choose 32/28 nm PDK but it might be required more strict rules on DRC, so you need to be more careful about your layout design with 32/28nm PDK. Above procedure is just required for one time, you do not need to re-do above command `cp` for the next time.
 
-Once you correctly install PDK library in your workspace, then you can run `custom designer` as follows
+Once PDK library is installed correctly in your workspace, then you can run `custom designer` as follows
 
 ```
 cdesigner&
@@ -62,17 +62,17 @@ Custom Designer Console should open up without any warning message in Fig. 2
 _**Fig. 2 Custom Designer Setup with PDK**_
 
 
-If you see any warning message, in Fig. 2, then your PDK was not setup correctly, so you need to copy PDK's `lib.def` in your workspace again.
+If you see any warning message, in Fig. 2, that means that your PDK was not setup correctly, so you need to copy PDK's `lib.def` in your workspace again.
 
-Let's launch Library manager first, you go to tools -> Library manager, then Fig Library manager is launched. You must see `SAED_PDK_90` library in the libraries list.
+Let's launch Library manager first, then you go to Tools -> Library manager, then Fig Library manager is launched. You may see `SAED_PDK_90` library in the libraries list.
 
-Then, go to file -> New -> Library to create a new library. New library windows will pop up. You can put your new library name in the name in the attributes section. For the PDK technology, you can choose `Import file` and choose your technology file (.tf extension) in the PDK. You can under the following folder for 90nm.
+Then, go to File -> New -> Library to create a new library. New library windows will pop up. You can put your new library name in the name in the attributes section. For the PDK technology, you can choose `Import file` and choose your technology file (.tf extension) in the PDK. You can under the following folder for 90nm.
 
 ```
 /usr/local/synopsys/pdk/SAED_PDK90nm/techfiles/saed90nm_1p9m_cd.tf
 ```
 
-After you put name and technology file (.tf) and clock Ok. See Fig 3.
+After you put name and technology file (.tf) and click Ok. See Fig 3.
 
 
 ![Library setup](images/fig3.png)
@@ -89,20 +89,20 @@ In the main windows, go to File -> New -> CellView to create a new Cell View und
 
 _**Fig. 4. New Cellview**_
 
-After you click `OK` then schematic design windows open up as seen in in Fig. 5.
+After clicking `OK` then, schematic design windows open up as seen in in Fig. 5.
 
 ![New Schematic](images/fig5.png)
 
 _**Fig. 5. New Schematic Windows**_
 
-Here, we need to make sure we use right PDK library. From your console window (first launched windows after you typed `cdesginer`), go to Tools -> Technology Manage.  Then you have to choose `SAED_PDK_90` in attachment for your `mylibrary`.
+Here, you need to make sure right PDK library used. From your console window (first launched windows after you typed `cdesigner`), go to Tools -> Technology Manage.  Then you have to choose `SAED_PDK_90` in attachment for your `mylibrary`.
 
 ![technology manager](images/fig6.png)
 
 _**Fig. 6. Technology Manager**_
 
 
-Go to your schematic window, and clock Add > Instance, then select `SAED_PDK_90` for the library and select pmos4t and nmos4t for your p-mos and n-mos Cellview
+Go to your schematic window, and click Add > Instance, then select `SAED_PDK_90` for the library and select pmos4t and nmos4t for your p-mos and n-mos Cellview
 For pmos4t width, assign 0.5um and for n-mos 4t width, assign 0.25um as seen in Fig. 7. You can modify these values later with property editor (Edit -> Properties -> Property Editor).
 
 ![Add instance for p-mos and n-mos](images/fig7.png)
@@ -116,25 +116,25 @@ After placing the p-mos and n-mos transistors, the schematic should look like fi
 _**Fig. 8. Placing p-mos and n-mos**_
 
 
-After you place, you need to add wires into the schematic as seen in Fig 9. Go to Add -> Wire in the menu of schematic editor. Draw wire and you need to press `ESC` key to escape the selected mode.  
+After you place, you need to add wires to the schematic as seen in Fig 9. Go to Add -> Wire in the menu of the schematic editor and draw wire with your mouse and you need to press `ESC` key to escape the selected mode.
 
 ![Add wires](images/fig9.png)
 
 _**Fig. 9. Add wires**_
 
 
-After drawing all of required wires, then you can assign wire names (Add -> Wire name). Once you choose Wire name mode, you need to type wire name first in the top window shown in Fig 10. After type wire name, then you click the wire you want to assign.
+After drawing all the required wires, then you can assign wire names (Add -> Wire name). Once you choose Wire name mode, you need to type wire name first in the top window shown in Fig 10. After typing wire name, then you click the wire you want to assign.
 
 ![Add wire names](images/fig10.png)
 
 _**Fig. 10. Add wire names**_
 
 
-After we added wires and wire names, you may need to add pins to make input and output. To add pins to the schematic, go to Add -> Pin to add pins for input (VIN, AVDD, AVSS) and output (VOUT) for your schematic. You can type in a name for the pin and select whether the pin is an input or output port. Then place the pin on a wire or if the wire in schematic view already has a name you can click on the wire and the pin will get the name of the wire. Note that the pin names in schematic view should match the label names in layout view (AVDD, AVSS, VIN, VOUT, etc) for future reference.
+After adding wires and wire names, you may need to add pins for input and output. To add pins to the schematic, go to Add -> Pin to add pins for input (VIN, AVDD, AVSS) and output (VOUT) for your schematic. You can type in a name for the pin and select whether the pin is an input or output port. Then place the pin on a wire or if the wire in schematic view already has a name you can click on the wire and the pin will get the name of the wire. Note that the pin names in schematic view should match the label names in layout view (AVDD, AVSS, VIN, VOUT, etc) for future reference.
 
 See Fig. 11 and Fig. 12 for reference on how to add pins.
 
-Afterwards your circuit should look similar to figure 13 below after you add the pins. As a general convention, use uppercase letters for naming pins instead of lowercase letters.
+Afterward, your circuit should look similar to figure 13 below after you add the pins. As a general convention, use uppercase letters for naming pins instead of lowercase letters.
 
 
 ![fig11](images/fig11.png)
@@ -202,7 +202,7 @@ Your final schematic should look like Fig. 18 above with the applied property ed
 ## Part 3: Simulation and analysis
 
 In SAE, we will run a DC sweep and a transient analysis.
-To run SAE, go to Tools -> SAE in the schematic window. This will launch the window in Fig. 20, which consists of three primary sections. Section one contains the design variables. Section Two contains the values being measures in the circuit. Section three displays the types of analysis being run. See figure 20 below for reference.
+To run SAE, go to Tools -> SAE in the schematic window. This will launch the window in Fig. 20, which consists of three primary sections. Section one contains the design variables. Section Two contains the values being measured in the circuit. Section three displays the types of analysis being run. See figure 20 below for reference.
 
 ![fig20](images/fig20.png)
 
@@ -222,14 +222,14 @@ In section two of the model files window (see Fig. 21), select TT_12 as your tra
 _**Fig. 21. HSPICE simulation model**_
 
 
-Next to setup analysis type, go to Setup -> Analysis and the window in figure 22 will appear. Stay on the general tab and select tran to setup the transient analysis type. Setup the remaining options as shown in Fig. 22 and click Apply.
+Next to setup analysis type, go to Setup -> Analysis and the window in figure 22 will appear. Stay on the general tab and select `tran` to setup the transient analysis type. Setup the remaining options as shown in Fig. 22 and click Apply.
 
 ![fig22](images/fig22.png)
 
 _**Fig. 22. Transient Simulation Setup**_
 
 
-In the same window, select dc to setup a DC sweep. Fill out the options as shown in Fig. 23 below. Click OK when done.
+In the same window, select `dc` to setup a DC sweep. Fill out the options as shown in Fig. 23 below. Click OK when done.
 
 ![fig23](images/fig23.png)
 
@@ -243,22 +243,22 @@ To setup the circuit output voltage:
 
 1. Click under the output field, and write “Vout” or a name for an output variable of the inverter.
 1. Click under the expression column and choose the output node from the schematic. In this case, click on pointer icon and select the wire labeled “VOUT” as shown below in Fig. 24 in the schematic window. You can also write an equation that uses the values of some nodes in that schematic.
-1. Under analysis, select the type of analysis you want to run. In this case, select dc and tran to run the transient and DC analysis for this variable.
+1. Under analysis, select the type of analysis you want to run. In this case, select `dc` and `tran` to run the transient and DC analysis for this variable.
 
 
 To setup the circuit input voltage:
 1. Click under the output field in a new row, and write “Vin” or a name for an input variable of the inverter.
 1. In the same row, click under the expression column and choose the input node from the schematic. In this case, click on pointer icon and select the wire labeled “VIN” as shown below in figure 24 in the schematic window.
-1. Under analysis, select the type of analysis you want to run. In this case, select dc and tran to run the transient and DC analysis for this variable.
+1. Under analysis, select the type of analysis you want to run. In this case, select `dc` and `tran` to run the transient and DC analysis for this variable.
 
 
 
 To setup the circuit source current:
 1. Click under the output field in a new row, and write “isupply” or a name for a current variable.
-1. In the same row, click under the expression column and choose the voltage source from the schematic. In this case, click on and select the voltage source labeled “V0” as shown below in Fig. 24 in the schematic window. Notice that current is being measure rather than voltage.
-1. Under analysis, select the type of analysis you want to run. In this case, select dc and tran to run the transient and DC analysis for this variable.
+1. In the same row, click under the expression column and choose the voltage source from the schematic. In this case, click on and select the voltage source labeled “V0” as shown below in Fig. 24 in the schematic window. Notice that current is being measured rather than voltage.
+1. Under analysis, select the type of analysis you want to run. In this case, select `dc` and `tran` to run the transient and DC analysis for this variable.
 
-Afterwards, the SAE window should look something similar to figure 25 below. Note that the expression values in figure 25 may not match with your values which is fine since those are dependent on the names used in the schematic for the voltage sources and wires.
+Afterward, the SAE window should look something similar to figure 25 below. Note that the expression values in figure 25 may not match with your values which are fine since those are dependent on the names used in the schematic for the voltage sources and wires.
 
 
 
@@ -288,7 +288,7 @@ _**Fig. 27. Custom Designer Console**_
 
 
 After running simulation successfully, a WaveView window will open up. You can select the type of analysis you want to view by selecting the respective tab in the bottom left corner of the window.
-For the transient analysis waveform, click the tran tab in the bottom left corner. See Fig. 28 for the transient analysis. For the DC sweep waveform, click the dc tab in the bottom left corner.
+For the transient analysis waveform, click the `tran` tab in the bottom left corner. See Fig. 28 for the transient analysis. For the DC sweep waveform, click the dc tab in the bottom left corner.
 See Fig. 29 for the dc sweep analysis You now have run transient and dc analysis successfully.
 
 ![fig28](images/fig28.png)
@@ -302,7 +302,7 @@ _**Fig. 28. Transient Analysis in Waveview**_
 _**Fig. 29. DC Sweep Analysis in Waveview**_
 
 
-## Part 4: Waveforn and analysis
+## Part 4: Waveform and analysis
 
 The measurement tool in the WaveView window provides many methods for measuring the waveforms. Here is a list of several features and measurements you can do in WaveView:
 
@@ -328,7 +328,7 @@ To group the waveforms in Waveview together, select the names of the signals to 
 
 Delay Measurements of Vin and Vout at 50% to 50%:
 
-To measure delay between the input and output signals of the inverter at 50% select the tran tab in the bottom left hand corner of the WaveView window. Group the Vout and Vin waveforms together so the two waves overlap each other (see figure 31 on how to group signals). Open the measurement tool by going to Tools -> Measurement… or by clicking ruler icon in the WaveView window. Click the All tab in the measurement tool window and fill out the options as shown below in figure 32. Click Ok when done.
+To measure delay between the input and output signals of the inverter at 50% select `tran` tab in the bottom left hand corner of the WaveView window. Group the Vout and Vin waveforms together so the two waves overlap each other (see figure 31 on how to group signals). Open the measurement tool by going to Tools -> Measurement… or by clicking ruler icon in the WaveView window. Click the All tab in the measurement tool window and fill out the options as shown below in figure 32. Click Ok when done.
 
 ![fig32](images/fig32.png)
 
@@ -343,7 +343,7 @@ _**Fig. 33. Delay Waveform Measurement**_
 
 Rise/Fall Time Measurements at 90% and 10% for Vout:
 
-To measure fall and rise time, select the tran tab in the bottom left hand corner of the WaveView window and ungroup all the waveforms as described in figure 30. Open the measurement tool by going to Tools -> Measurement… or by clicking ruler icon in the WaveView window. Click the All tab in the measurement tool window and fill out the options as shown below in Fig. 34. Click Ok when done.
+To measure fall and rise time, select the `tran` tab in the bottom left-hand corner of the WaveView window and ungroup all the waveforms as described in figure 30. Open the measurement tool by going to Tools -> Measurement… or by clicking ruler icon in the WaveView window. Click the All tab in the measurement tool window and fill out the options as shown below in Fig. 34. Click Ok when done.
 
 ![fig34](images/fig34.png)
 
@@ -359,7 +359,7 @@ _**Fig. 35. Rise/Fall Waveform measurement**_
 
 Average Current Measurement:
 
-To measure average current, select the tran tab in the bottom left hand corner of the WaveView window and ungroup all the waveforms as described in figure 30. Delete the Vout and Vin waveforms so only the isupply waveform shows. You can delete a waveform by selecting its name in the signal list on the left side of the WaveView window and pressing delete on the keyboard and clicking ok. You can always recover these signals later by clicking Plot on the SAE window.
+To measure average current, select the `tran` tab in the bottom left-hand corner of the WaveView window and ungroup all the waveforms as described in figure 30. Delete the Vout and Vin waveforms so only the isupply waveform shows. You can delete a waveform by selecting its name in the signal list on the left side of the WaveView window and pressing delete on the keyboard and clicking ok. You can always recover these signals later by clicking Plot on the SAE window.
 
 Open the measurement tool by going to Tools -> Measurement… or by clicking ruler icon in the WaveView window. Scroll down in the menu window on the left and then click on the Average measurement within the Level submenu as shown in Fig. 36. Click Ok when done.
 
@@ -378,7 +378,7 @@ _**Fig. 37. Average Waveform Measurement**_
 
 Frequency Measurement:
 
-To measure frequency, select the tran tab in the bottom left hand corner of the WaveView window and ungroup all the waveforms as described in Fig. 30.
+To measure frequency, select `tran` tab in the bottom left hand corner of the WaveView window and ungroup all the waveforms as described in Fig. 30.
 
 Open the measurement tool by going to Tools -> Measurement… or by clicking ruler icon in the WaveView window. Click the All tab in the measurement tool window and fill out the options as shown below in Fig 38. Click Ok when done.
 
@@ -403,6 +403,8 @@ Lab 1 is to learn how to design your circuit, generate netlist, and simulate giv
 
 ### Deliverables for your lab report.
 
+* Name, SID, Session(021,022), ENGR ID, computing ID, your partner name
+
 * Summary of what you learned thru this lab (One paragraph)
 
 * An inverter schematic view as seen in Fig 13.
@@ -411,7 +413,7 @@ Lab 1 is to learn how to design your circuit, generate netlist, and simulate giv
 
 * A testbench for your inverter design as seen in Fig 18.
 
-* A trensient analysis waveform as seen in Fig. 28.
+* A transient analysis waveform as seen in Fig. 28.
 
 * A DC Sweep analysis waveform as seen in Fig 29.
 
@@ -423,7 +425,7 @@ Lab 1 is to learn how to design your circuit, generate netlist, and simulate giv
 
 * A frequency measurement annotated waveform as seen in Fig. 39.
 
-* Some of issues if you have (One paragraph)
+* Some of the issues if you have (One paragraph)
 
 ### Due
 
@@ -431,4 +433,4 @@ Lab 1 is to learn how to design your circuit, generate netlist, and simulate giv
 
 ### Next lab
 
-In lab 2, you will learn Layout design, DRC, LVS, Parasitic Extraction, and post-simulation with parasotic extraction.
+In lab 2, you will learn Layout design, DRC, LVS, Parasitic Extraction, and post-simulation with parasitic extraction.
