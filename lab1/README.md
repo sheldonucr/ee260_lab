@@ -427,7 +427,31 @@ Lab 1 is to learn how to design your circuit, generate netlist, and simulate giv
 
 * Some of the issues if you have (One paragraph)
 
-### Due
+### What to submit
+
+* Lab report (PDF format)
+
+file name should be following
+
+`lab1-[My UCR NET ID].pdf`
+
+for example, my UCR Net ID is `tkim049`, so filename should be
+
+`lab1-tkim049.pdf`
+
+* Tar and Zip your design folder you made
+
+`cd ~/eecs168` or you made
+
+`tar -cvzf lab1-[My UCR NET ID].tgz ./`
+
+for example, my ucr Net ID is `tkim049`, so do like following
+
+`tar -cvzf lab1-tkim049.tgz ./`
+
+* You need to submit two files (*.pdf, *.tgz) in iLearn
+
+### Lab Report Due
 
 * One week. 1/22 Friday 11:59pm.
 
