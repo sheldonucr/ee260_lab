@@ -4,17 +4,14 @@ In this tutorial, some contexts used from Vazgen Melikyan (Synopsys) and Hamid N
 
 ## Introduction
 
-In this tutorial, you will learn how to draw custom IC layout and simulate your design using 28/32/90nm technologies with Synopsys Custom Design Tools. This tutorial includes the detail steps of schematic and layout designs.
+In this tutorial, you will learn how to draw custom IC layout and simulate your design using 28/32/90nm technologies in Synopsys Custom Design Tools. This tutorial includes the detail steps of schematic, layout, and simulation of designs.
 
-This manual assumes you are able to do some basic things in a Linux environment such as create
-a folder, change directories....etc. If you want to learn how to use Linux here are many good
-tutorials available on the web, such as this one: http://tldp.org/LDP/gs/node5.html.
+You need to have some basic skill for Linux Environment, so you are able to manage the design file (creation/rename/modify folders and files). If you want to know how to use Linux, there are many of tutorials available on the web. For example, there is short Linux cheat sheets [here](http://www.nixtutor.com/linux/all-the-best-linux-cheat-sheets/) and long tutorials [here](http://tldp.org/LDP/gs/node5.html)
 
-* Fig1
+![full custom design flow](images/fig1.png)
+*fig. 1 full custom design flow*
 
-
-Figure I.1
-shows the design flow this tutorial will be implementing. In the first three parts of this manual
+Figure 1 shows full custom design flow. First three parts of this flow  this tutorial will be implementing. In the first three parts of this manual
 you will design and simulate a CMOS inverter using Custom DesignerSE in conjunction with
 Hspice and WaveView to visually assemble the circuit schematic, simulate it, and view the
 output waveforms. For further help you are encouraged to go to “Help” in the menu bar of
