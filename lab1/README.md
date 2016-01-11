@@ -10,19 +10,19 @@ You need to have some basic skill for Linux Environment, so you are able to mana
 
 ![full custom design flow](images/fig1.png)
 
-_**fig. 1 full custom design flow**_
+_**Fig. 1 full custom design flow**_
 
 
 Fig. 1 shows the full custom design flow with Synopsys design tools. The first three parts of flow are covered in our lab1 and the rest four parts will be covered in the lab2. In this three parts, you design a CMOS inverter in Custom Designer, simulate the circuit in HSPICE, measure and view waveforms of simulation results in Custom Waveview.
 
-For the rest four parts (Lab 2), you will use Custom Designer to create a layout with given technology from Synopsys. IC Validator will be used to verify your design (DRC) and check if your layout matches your schematic (LVS). In the last two steps, you can do parasitic extraction of your circuit and do simulation again. Finally, you can compare your simulation and post-simulation. This is our lab 1 and 2. In this tutorial, you will complete the first three steps.
+For the rest four parts (Lab 2), you will use Custom Designer to create a layout with given technology from Synopsys. IC Validator will be used to verify your design ([DRC](https://en.wikipedia.org/wiki/Design_rule_checking)) and check if your layout matches your schematic ([LVS](https://en.wikipedia.org/wiki/Layout_Versus_Schematic)). In the last two steps, you can do parasitic extraction of your circuit and do simulation again. Finally, you can compare your simulation and post-simulation. This is our lab 1 and 2. In this tutorial, you will complete the first three steps.
 
 ## Part 1: Setup your design workspace
 
 You need to login our `storm.engr.ucr.edu` server first. If you do not know how to connect our server, please check out [lab1](../lab0)
 
 
-You can use your home folder (`~ or /home/[Account Name]`) or you can create new folder to have your design for this eecs168 course. To create your design folder you need to type followings. The first command let you move your home folder, and `mkdir` command is to create your folder.
+You can use your home folder (`~ or /home/[Account Name]`, in the example, [Account Name will be `tkim` or `zsun`, you need to use your own account) or you can create new folder to have your design for this eecs168 course. To create your design folder you need to type followings. The first command let you move your home folder, and `mkdir` command is to create your folder.
 
 ```
 cd ~
@@ -37,7 +37,7 @@ You install Synopsys PDK ([Process Design Kit](https://en.wikipedia.org/wiki/Pro
 
 For 32/28 nm Synopsys PDK
 ```
-cp /usr/local/synopsys/pdk/SAED_PDK90nm/install/lib.defs ./
+cp /usr/local/synopsys/pdk/SAED3228nm_iPDK/install/lib.defs ./
 ```
 
 For 90nm Synopsys PDK
@@ -45,9 +45,9 @@ For 90nm Synopsys PDK
 cp /usr/local/synopsys/pdk/SAED_PDK90nm/install/lib.defs ./
 ```
 
-Above process, you only need one time, you do not need to redo above command for next time.
+You can choose either 32/28 nm PDK or 90nm. In this class, we recommend 90nm PDK for your class work. You can choose 32/28 nm PDK but it might be need more strict rule on DRC, so you need to be more careful for your layout design. You only need one time setup for above procedure, you do not need to redo above command `cp` for next time.
 
-Once you correctly setup PDK in your workspace, then you can run `custom designer` as follows
+Once you correctly install PDK library in your workspace, then you can run `custom designer` as follows
 
 ```
 cdesigner&
@@ -57,12 +57,12 @@ By adding `&` after the command, you can put a command in the background in Linu
 
 Custom Designer Console should open up without any warning message in Fig. 2
 
-![fig2](images/fig2.png)
+![Custom Designer](images/fig2.png)
 
-_**fig. 2 Custom Designer Setup with PDK **_
+_**Fig. 2 Custom Designer Setup with PDK **_
 
 
-If you see any warning message, in Fig. 2, then your PDK was not setup correctly, so you need to copy `lib.def` in your workspace again.
+If you see any warning message, in Fig. 2, then your PDK was not setup correctly, so you need to copy PDK's `lib.def` in your workspace again.
 
 Use File  New Library to create a new library. A window will appear. Several lines in the
 window are to be filled out to create a new library and several are not which are inactive and are
@@ -74,7 +74,7 @@ and paste this file directory in the field:
 90nm_1p9m_cd.tf
 After you have filled out the name, directory, and import file, click OK. See Fig.3.
 
-* fig3
+![Library setup](images/fig3.png)
 
 ## Part 2: Creating a cell view
 
