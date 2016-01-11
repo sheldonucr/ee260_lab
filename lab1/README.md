@@ -45,7 +45,7 @@ For 90nm Synopsys PDK
 cp /usr/local/synopsys/pdk/SAED_PDK90nm/install/lib.defs ./
 ```
 
-You can choose either 32/28 nm PDK or 90nm. In this class, we recommend 90nm PDK for your class work. You can choose 32/28 nm PDK but it might be need more strict rule on DRC, so you need to be more careful for your layout design. You only need one time setup for above procedure, you do not need to redo above command `cp` for next time.
+You can choose either 32/28 nm PDK or 90nm. In this class, we recommend 90nm PDK for your class work. You can choose 32/28 nm PDK but it might be need more strict rule on DRC, so you need to be more careful for your layout design for 32/28nm PDK. You only need one time setup for above procedure, you do not need to redo above command `cp` for next time.
 
 Once you correctly install PDK library in your workspace, then you can run `custom designer` as follows
 
@@ -64,49 +64,62 @@ _**Fig. 2 Custom Designer Setup with PDK **_
 
 If you see any warning message, in Fig. 2, then your PDK was not setup correctly, so you need to copy PDK's `lib.def` in your workspace again.
 
-Use File  New Library to create a new library. A window will appear. Several lines in the
-window are to be filled out to create a new library and several are not which are inactive and are
-filled by default. Fill out the name field with a library name and fill out the directory field for a
-place to save it. For the “Import File” field, click the dot so you can edit the text field and copy
-and paste this file directory in the field:
+Let's launch Library manager first, you go to tools -> Library manager, then Fig Library manager is launched. You must see `SAED_PDK_90` library in the libraries list.
 
-/packages/process_kit/generic/generic_90nm/updated_oct2010/SAED_PDK90nm/techfiles/saed
-90nm_1p9m_cd.tf
-After you have filled out the name, directory, and import file, click OK. See Fig.3.
+Then, go to file -> New -> Library to create a new library. New library windows will pop up. You can put your new library name in the name in the attributes section. For the PDK technology, you can choose `Import file` and choose your technology file (.tf extension) in the PDK. You can under the following folder for 90nm.
+
+```
+/usr/local/synopsys/pdk/SAED_PDK90nm/techfiles/saed90nm_1p9m_cd.tf
+```
+
+After you put name and technology file (.tf) and clock Ok. See Fig 3.
+
 
 ![Library setup](images/fig3.png)
 
+_** Fig 3. New library creation **_
+
+
+
 ## Part 2: Creating a cell view
 
-Use File New CellView to create a new Cell View under the library that you create in part 1
-(In this case called mylibrary). Enter a name for “Cell Name” and choose schematic for “View
-Name”. For the “Editor” choose SE-schematic (see Fig.4). Click OK.
+In the main windows, go to File -> New -> CellView to create a new Cell View under the library you made. We made `mylibrary`, and you enter a new name, here we may use cell name as `inverter` then choose view name as `schematic`. For the editor, you use `Schematic Editor` as in Fig 4.
 
-* fig4
+![New Cellview](images/fig4.png)
 
-After you click Ok new window will open up called schematic editor (Fig.5)
+_** Fig 4. New Cellview **_
 
-* fig5
+After you click `OK` then schematic design windows open up as seen in in Fig. 5.
 
-In here we need to make sure that we are in right library.
-From your console window select Tools Technology Manager and then make sure the
-attachment of your library (in this case “mylibrary”) is SAED_PDK_90. If not, please click on it
-and change it (Fig.6).
+![New Schematic](images/fig5.png)
 
-* fig6
+_** Fig 5. New Schematic Windows **_
 
-Now go ahead and click on Add  Instance or simply click on this icon in the schematic
-window. Select “SAED_PDK_90” for the library and select pmos4t and nmos4t for the cell
+Here, we need to make sure we use right PDK library. From your console window (first launched windows after you typed `cdesginer`), go to Tools -> Technology Manage.  Then you have to choose `SAED_PDK_90` in attachment for your `mylibrary`.
+
+![technology manager](images/fig6.png)
+
+_** Fig 6. Technology Manager **_
+
+
+Go to your schematic window, and clock Add > Instance, then select `SAED_PDK_90` for the library and select pmos4t and nmos4t for your p-mos and n-mos Cellview
+For pmos4t width, assign 0.5um and for n-mos 4t width, assign 0.25um as seen in Fig. 7. You can modify this 
+
+for the cell
 while placing their respective parts on the schematic. For pmos4t width, assign 0.5um and for
 nmos4t width, assign 0.25um (Fig.7). You can also modify these properties later using the
 property editor by going to Edit Properties  Property Editor and selecting the component
 you want to modify in schematic view.
 
-* fig7
+![Add instance for p-mos and n-mos](images/fig7.png)
+
+_** Fig 7. Adding instance for p-mos and n-mos **_
 
 After placing the pmos and nmos transistors, the schematic should look like figure 8 below.
 
-* fig8
+![Placing p-mos and n-mos](images/fig8.png)
+
+_** Fig 8. Placing p-mos and n-mos **_
 
 Next add wires to the schematic, click and draw wires to the circuit using the mouse pointer,
 see figure 9 for wire connections. To deselect wire adding, press ESC. Now you need to give
