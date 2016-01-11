@@ -20,32 +20,49 @@ For the rest four parts (Lab 2), you will use Custom Designer to create a layout
 ## Part 1: Setup your design workspace
 
 You need to login our `storm.engr.ucr.edu` server first. If you do not know how to connect our server, please check out [lab1](../lab0)
-The first step is to login. Please refer to the login tutorial if you are having trouble logging in or
-running the following commands. If you are using a Linux machine not connected to
-hafez.sfsu.edu try using the following command to ensure you can use x- server:
-ssh -l username -X hafez.sfsu.edu
-To setup the library we will use the following command in the shell window:
-cp /packages/synopsys/setup/lib.defs ./
-cp /packages/process_kit/generic/generic_90nm/updated_oct2010/SAED_PDK90nm/display.tcl ./
-(Notice that there is a space between cp and /packages for the second copy command above, and
-also the space before ./)
 
-Notice that the above commands need to be run once after your first login. You do not need to
-rerun this command for future logins. Running the first copy command more than once can
-overwrite saved directories resulting in lost files later on.
-To setup all the software we will use the following commands in the shell window. These
-commands must be run every time you use the Synopsys software:
-csh
-source /packages/synopsys/setup/full_custom.csh
-Notice that the csh and source commands set the environment and need to be run every time you
-login. To run an instance of Custom Designer simply type “cdesigner &”. Your command
-window should look like the one shown in Fig.1.
 
-* fig1
+You can use your home folder (`~ or /home/[Account Name]`) or you can create new folder to have your design for this eecs168 course. To create your design folder you need to type followings. The first command let you move your home folder, and `mkdir` command is to create your folder.
 
-Custom Designer Console should open up (Fig.2).
+```
+cd ~
+mkdir eecs168
+```
 
-* fig2
+Once you generate your workspace folder, you need to go to the folder
+```
+cd eecs168
+```
+You install Synopsys PDK ([Process Design Kit](https://en.wikipedia.org/wiki/Process_design_kit)) (technology library into your workspace as follows.
+
+For 32/28 nm Synopsys PDK
+```
+cp /usr/local/synopsys/pdk/SAED_PDK90nm/install/lib.defs ./
+```
+
+For 90nm Synopsys PDK
+```
+cp /usr/local/synopsys/pdk/SAED_PDK90nm/install/lib.defs ./
+```
+
+Above process, you only need one time, you do not need to redo above command for next time.
+
+Once you correctly setup PDK in your workspace, then you can run `custom designer` as follows
+
+```
+cdesigner&
+```
+
+By adding `&` after the command, you can put a command in the background in Linux system. So, you can do another job while `Custom Designer` is running.
+
+Custom Designer Console should open up without any warning message in Fig. 2
+
+![fig2](images/fig2.png)
+
+_**fig. 2 Custom Designer Setup with PDK **_
+
+
+If you see any warning message, in Fig. 2, then your PDK was not setup correctly, so you need to copy `lib.def` in your workspace again.
 
 Use File  New Library to create a new library. A window will appear. Several lines in the
 window are to be filled out to create a new library and several are not which are inactive and are
