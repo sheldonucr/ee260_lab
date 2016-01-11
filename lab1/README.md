@@ -15,11 +15,11 @@ _**fig. 1 full custom design flow**_
 
 Fig. 1 shows the full custom design flow with Synopsys design tools. The first three parts of flow are covered in our lab1 and the rest four parts will be covered in the lab2. In this three parts, you design a CMOS inverter in Custom Designer, simulate the circuit in HSPICE, measure and view waveforms of simulation results in Custom Waveview.
 
-For the rest parts, you will use Custom Designer to create a layout with given technology from Synopsys. IC Validator will be used to verify your design (DRC) and check if your layout matches your schematic (LVS). In the last two steps, you can do parasitic extraction of your circuit and do simulation again. Finally, you can compare your simulation and post-simulation. This is our lab 1 and 2. In this section, you will complete the first three steps.
+For the rest four parts (Lab 2), you will use Custom Designer to create a layout with given technology from Synopsys. IC Validator will be used to verify your design (DRC) and check if your layout matches your schematic (LVS). In the last two steps, you can do parasitic extraction of your circuit and do simulation again. Finally, you can compare your simulation and post-simulation. This is our lab 1 and 2. In this tutorial, you will complete the first three steps.
 
 ## Part 1: Setup your design workspace
 
-You need to login our `storm.engr.ucr.edu` server first. If you don't know how to do it
+You need to login our `storm.engr.ucr.edu` server first. If you do not know how to connect our server, please check out [lab1](../lab0)
 The first step is to login. Please refer to the login tutorial if you are having trouble logging in or
 running the following commands. If you are using a Linux machine not connected to
 hafez.sfsu.edu try using the following command to ensure you can use x- server:
