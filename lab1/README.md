@@ -403,7 +403,7 @@ Lab 1 is to learn how to design your circuit, generate netlist, and simulate giv
 
 ### Deliverables for your lab report.
 
-* Name, SID, Session(021,022), ENGR ID, computing ID, your partner name
+* Name, SID, Session(021,022), ENGR ID, UCR NetID, your partner name
 
 * Summary of what you learned thru this lab (One paragraph)
 
