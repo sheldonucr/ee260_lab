@@ -429,7 +429,7 @@ Lab 1 is to learn how to design your circuit, generate netlist, and simulate giv
 
 ### Due
 
-* One week. Monday session - 1/18, Thursday session - 1/21.
+* One week. 1/22 Friday 11:59pm.
 
 ### Next lab
 
