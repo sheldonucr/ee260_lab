@@ -411,7 +411,7 @@ Lab 1 is to learn how to design your circuit, generate netlist, and simulate giv
 
 * An inverter symbol view as seen in Fig 15.
 
-* A testbench for your inverter design as seen in Fig 18.
+* A test-bench for your inverter design as seen in Fig 18.
 
 * A transient analysis waveform as seen in Fig. 28.
 
