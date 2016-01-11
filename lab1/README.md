@@ -428,3 +428,7 @@ Lab 1 is to learn how to design your circuit, generate netlist, and simulate giv
 ### Due
 
 * One week. Monday session - 1/18, Thursday session - 1/21.
+
+### Next lab
+
+In lab 2, you will learn Layout design, DRC, LVS, Parasitic Extraction, and post-simulation with parasotic extraction.
