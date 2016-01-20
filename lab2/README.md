@@ -220,3 +220,56 @@ After fix every thing, you can see `PASS` message in Fig. 65
 ![fig65](images/fig65.png)
 
 _**Fig. 65. LVS Passed**_
+
+
+## Lab2
+
+### Objective
+
+Lab 2 is to learn how to design your layout, validate with DRC and LVS. You will learn three IC design tools (Custom Designer, IP Validator) in this lab and the followings are expected to be delivered in your lab report.
+
+### Deliverables for your lab report.
+
+* Name, SID, Session(021,022), ENGR ID, UCR NetID, your partner name
+
+* Summary of what you learned thru this lab (One paragraph)
+
+* An inverter layout in Fig. 51.
+
+* An DRC Result with no errors in Fig 54.
+
+* and LVS Result with `CLEAN` in Fig 63.
+
+* Some of the issues if you have (One paragraph)
+
+### What to submit
+
+* Lab report (PDF format)
+
+file name should be following
+
+`lab1-[My UCR NET ID].pdf`
+
+for example, my UCR Net ID is `tkim049`, so filename should be
+
+`lab1-tkim049.pdf`
+
+* Tar and Zip your design folder you made
+
+`cd ~/eecs168` or you made
+
+`tar -cvzf lab1-[My UCR NET ID].tgz ./`
+
+for example, my ucr Net ID is `tkim049`, so do like following
+
+`tar -cvzf lab1-tkim049.tgz ./`
+
+* You need to submit two files (*.pdf, *.tgz) in iLearn
+
+### Lab Report Due
+
+* One week. 1/22 Friday 11:59pm.
+
+### Next lab
+
+In lab 3, you will learn Parasitic Extraction, post-simulation with parasitic extraction, and Hierachical design. In addition, we will start to design Standard Cell for our full chip.
