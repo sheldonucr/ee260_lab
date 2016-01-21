@@ -221,19 +221,23 @@ After fix every thing, you can see `PASS` message in Fig. 65
 
 _**Fig. 65. LVS Passed**_
 
-## Part 8: Design NAND Gate
+## Part 8: Design NAND Gate (You don't need to finish this part during lab)
 
 From your lecture class, we learned NAND gate schematic and its layout. Now, from Lab1 and Lab2 tutorials, we learned how to draw schematic, simulate, and layout your circuit. Now we draw NAND gate schematic and layout. f'=a*b, so you need to design your NAND gate schematic and design testbench with your NAND symbol to simulate with HSPICE, then you need to draw layout for NAND gate with successful DRC and LVS.
 
-1. Design your NAND gate cell
+1. Design your `NAND` gate cell (see lecture notes)
 
-2. Design your NAND symbol
+1. Design your `NAND` symbol
 
-3. Design your simulation test NAND_testbench cell for simulation
+1. Design your simulation test `NAND_testbench` cell for simulation
 
-4. Do transient simulation with two different inputs and output, you need to show NAND gate is working.
+1. Do transient simulation with two different inputs and one output, you need to show if `NAND` gate is correctly working. You need to setup your testing variables such as timing, Input signal frequencies (`AIN`, `BIN`) with appropriate `AVDD` and `AVSS`.
 
-5. Draw NAND gate layout
+1. Draw `NAND` gate layout (see lecture notes)
+
+1. DRC for `NAND` gate layout
+
+1. LVS for `NAND` gate layout
 
 
 ## Lab2
@@ -275,28 +279,31 @@ Lab 2 is to learn how to design your layout, validate with DRC and LVS. You will
 
 file name should be following
 
-`lab1-[My UCR NET ID].pdf`
+`lab2-[My UCR NET ID].pdf`
 
 for example, my UCR Net ID is `tkim049`, so filename should be
 
-`lab1-tkim049.pdf`
+`lab2-tkim049.pdf`
 
 * Tar and Zip your design folder you made
 
 `cd ~/eecs168` or you made
 
-`tar -cvzf lab1-[My UCR NET ID].tgz ./`
+`tar -cvzf lab2-[My UCR NET ID].tgz ./`
 
 for example, my ucr Net ID is `tkim049`, so do like following
 
-`tar -cvzf lab1-tkim049.tgz ./`
+`tar -cvzf lab2-tkim049.tgz ./`
 
 * You need to submit two files (*.pdf, *.tgz) in iLearn
 
 ### Lab Report Due
 
-* One week. 1/22 Friday 11:59pm.
+* One week.
+
+* eecs168-021: by 11:59pm on 2/1
+* eecs168-022: by 11:59pm on 1/28
 
 ### Next lab
 
-In lab 3, you will learn Parasitic Extraction, post-simulation with parasitic extraction, and Hierachical design. In addition, we will start to design Standard Cell for our full chip.
+In lab 3, you will learn Parasitic Extraction, post-simulation with parasitic extraction, and Hierarchical design with 4-bit Full Adder. In addition, we will start to design Standard Cell for our full chip later.
