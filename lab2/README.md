@@ -14,7 +14,7 @@ To design a layout, you need to be familiar with the Lamba-based rules design. T
 evince /usr/local/synopsys/pdk/SAED_PDK90nm/documents/SAED_90_Design_Rule.pdf
 ```
 
-It is recommended that you keep running and check with DRC tool for your layout design while you design. In this tutorial you just sequentially design first and then check your DRC later. However, in practice, you need to keep checking your DRC with layout to find error earlier and correct your error and mistake.
+It is recommended that you keep running and check with DRC tool for your layout design while you design. In this tutorial you just sequentially design first and then check your DRC later. However, in practice, you need to keep checking your DRC with layout to find errors earlier and correct your errors and mistakes.
 
 __Be careful not to submit your lab report with any DRC or LVS errors.__
 
@@ -60,7 +60,7 @@ _**Fig. 42. Drawing Rulers and N-Well Layer**_
 
 After you have created an N-well (N-tub), move your mouse over it. Notice at the top left there are two fields that tell you what layer you are on and the coordinates. This is useful information if you are having trouble figuring out what a layer is and when you are fixing errors found in DRC.
 
-Now we are going to make diffusion areas for PMOS, NMOS and body connections. From our schematic, we know that the width of the PMOS should be 0.5um and the width of NMOS is 0.25um (Refer lab1). The location of the diffusion should be similar to the ones in Fig. 44. There are two horizontal diffusion areas that are the NMOS and PMOS devices, and two vertical rectangles that will be the body connections. Place rulers down to help you make sure the width of the diffusion areas for the NMOS and PMOS match our schematic area exactly. Select the “DIFF” layer again use the `Create Rectangle` tool to draw the diffusion area. Use rulers to check the width of the rectangles. If the widths are different than the widths of the devices in the schematic, you will not pass LVS. You can also use the property editor in `Edit -> Property` Editor to change the dimensions of the rectangle to exact values.
+Now we are going to make diffusion areas for PMOS, NMOS and body connections. From our schematic, we know that the width of the PMOS should be 0.5um and the width of NMOS should be 0.25um (Refer lab1). The location of the diffusion should be similar to the ones in Fig. 44. There are two horizontal diffusion areas that are the NMOS and PMOS devices, and two vertical rectangles that will be the body connections. Place rulers down to help you make sure the width of the diffusion areas for the NMOS and PMOS match our schematic area exactly. Select the “DIFF” layer again use the `Create Rectangle` tool to draw the diffusion area. Use rulers to check the width of the rectangles. If the widths are different than the widths of the devices in the schematic, you will not pass LVS. You can also use the property editor in `Edit -> Property` Editor to change the dimensions of the rectangle to exact values.
 
 ![fig43](images/fig43.png)
 
