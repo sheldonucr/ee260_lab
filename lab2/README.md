@@ -244,7 +244,7 @@ From your lecture class, we learned NAND gate schematic and its layout. Now, fro
 
 ### Objective
 
-Lab 2 is to learn how to design your layout, validate with DRC and LVS. You will learn three IC design tools (Custom Designer, IP Validator) in this lab and the followings are expected to be delivered in your lab report.
+Lab 2 is to learn how to design your layout, validate with DRC and LVS. You will learn three IC design tools (Custom Designer, IP Validator) and design inverter and NAND gates in this lab and the followings are expected to be delivered in your lab report.
 
 ### Deliverables for your lab report.
 
