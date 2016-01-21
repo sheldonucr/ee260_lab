@@ -262,7 +262,7 @@ Lab 2 is to learn how to design your layout, validate with DRC and LVS. You will
 
 * Your NAND gate test bench schematic for simulation
 
-* Your Waveform View result with transient analysis result (SAE, HSPICE) to show OUT'=AIN*BIN
+* Your Waveform View result with transient analysis result (SAE, HSPICE) to show `OUT'=AIN*BIN`
 
 * Your NAND gate layout
 
