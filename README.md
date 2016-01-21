@@ -23,7 +23,7 @@ Every discussion/Q&A will be at https://github.com/tkimva/ucr-eecs168. Please us
 ### Attendance Policy
 
 - Students who are late less than 10 min are considered tardy. (10% penalty of your lab report grade)
-- Students who are late more than 10 min are considered absent. (50% penalty of your following lab report)
+- Students who are late more than 10 min are considered absent. (50% penalty of your lab report grade)
 - Any missed lab should be made up within 1 week with 50% penalty, otherwise no credit. Missing a lab is acceptable only when emergency occurs (eg. Medical emergency, doctor letter is required)
 - If you finish your lab earlier, you do not need to come to lab, but you have to show your proof-of-completion (simple screenshot) to get permission by email.
 
