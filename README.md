@@ -27,6 +27,10 @@ Every discussion/Q&A will be at https://github.com/tkimva/ucr-eecs168. Please us
 - Any missed lab should be made up within 1 week with 50% penalty, otherwise no credit. Missing a lab is acceptable only when emergency occurs (eg. Medical emergency, doctor letter is required)
 - If you finish your lab earlier, you do not need to come to lab, but you have to show your proof-of-completion (simple screenshot) to get permission by email.
 
+## Late Submission for lab report
+
+- Late submission will not be accepted for your lab report.
+
 ### Cheating Policy
 
 Each lab report should be individual even if you can do pair design and programming. If I find students cheating on the lab report, I give no credit for lab given report. Then I forward your case to the academic integrity board at UCR.
