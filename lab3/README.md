@@ -365,17 +365,15 @@ This lab is designed for two weeks, so for your lab report, you need to design `
 
 * Your inverter parasitic view in Fig 71.
 
-* Your post simulation result
+* Your post simulation result in Fig 80.
 
-* Your 1-bit full adder gate schematic
+* Your 1-bit full adder schematic
 
-* Your 4-bit full adder gate schematic (with using hierarchical design)
-
-* Your 4-bit full adder test bench schematic for simulation ()
+* Your 4-bit full adder schematic (with using hierarchical design)
 
 * Your 1-bit full adder layout
 
-* Your 4-bit full adder layout
+* Your 4-bit full adder layout (with using hierarchical design)
 
 * An DRC Result with `no errors` for your 4-bit full adder
 
@@ -413,18 +411,18 @@ for example, my ucr Net ID is `tkim049`, so do like following
 
 ### Lab Report Due
 
-* Two week.
+* Two weeks.
 
-* eecs168-021: by 11:59pm on 2/1
-* eecs168-022: by 11:59pm on 1/28
+* eecs168-021: by 11:59pm on 2/15
+* eecs168-022: by 11:59pm on 2/11
 
 ### Checkoff
 
-* First week: Check off your parasitic extraction and ring oscillator layout and simulator
+* First week: Check off your parasitic extraction and ring oscillator layout and post-simulator
 
 * Second week: Check off your 1-bit full adder layout (DRC, LVS should be okay) and post-simulation
 
 
 ### Next lab
 
-In lab 4, you will design 4-bit SRAM cell.
+In lab 4, you will design 4-bit SRAM shift register.
