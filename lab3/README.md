@@ -24,7 +24,7 @@ In Fig 66, you need to click the "View output" Option to see the output window.
 
 _**Fig. 67-0. LPE Setup for StarRC**_
 
-In Fig67, 'Extraction Options' tab, you need to your 'Runset Report File' to yours. It is located under `pvjob_[your library name]_[your cellview name].icv.lvs' folder.
+In Fig67, 'Extraction Options' tab, you need to your `Runset Report File` to yours. It is located under `pvjob_[your library name]_[your cellview name].icv.lvs` folder.
 
 ![fig67_1](images/Fig_67_1.png)
 
@@ -154,7 +154,8 @@ If there is a mismatch error in the console regarding mismatched nets that are u
 ## Part 11: Hierarchical Design - (Last tutorial)
 
 Using smaller instances of circuits to create a larger design is what hierarchical design is all about. In this section, we use an inverter we created earlier and use several instances of it to create a five stage oscillator in schematic and layout views.
-Create a new schematic for the ring oscillator by going to New  CellView from the Custom Designer Console and setup the options as shown in figure 81 below. The setup is as follows:
+
+Create a new schematic for the ring oscillator by going to New -> CellView from the Custom Designer Console and setup the options as shown in figure 81 below. The setup is as follows:
 
 - Library: mylibrary
 - Cell Name: ringOscillator
@@ -169,7 +170,9 @@ _**Fig. 81. Ring Oscillator Schematic Setup**_
 
 In the schematic window, building a ring oscillator circuit with pins as shown below in Fig 82.
 For the inverter instances, look for them in Add -> Instance to open the add instance window. In the add instance window, choose `mylibrary` for library, inverter for cell, and symbol for the view and place five instances of the inverter on the schematic.
+
 Add wires with Add -> Wire.
+
 For the pins, go to Add -> Pins and place two input pins for the AVDD and AVSS signals, and place five input/Output pins at each inverter output. For the five input/output pins, I called them VIO1-5 in the schematic. Feel free to give the wires the same names as the pins using Add -> Wire Name. Also as a convention, use uppercase letters for pin names instead of lowercase letters.
 
 ![fig82](images/Fig_82.png)
@@ -267,11 +270,11 @@ Under main option select the file “rules.lvs.9m_saed90.ev” as `Run Dir` in t
 
 ![fig94](images/Fig_94.png)
 
-__**Fig. 94. LVS Setup*__
+_**Fig. 94. LVS Setup**_
 
 ![fig95](images/Fig_95.png)
 
-__**Fig. 95. LVS Setup**__
+_**Fig. 95. LVS Setup**_
 
 At this point if there are any LVS errors, an error window will show up. Debug any errors you have and rerun LVS until you pass it. After running LVS successfully, go to Verification -> LPE -> Setup and Run to run parasitic extraction.
 
