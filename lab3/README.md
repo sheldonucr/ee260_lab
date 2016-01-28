@@ -46,6 +46,15 @@ _**Fig. 68. LPE Setup for StarRC**_
 
 Make sure the other options in this tab match up with Fig 67-0,1,2,3, and Fig 68.
 
+Device Map:
+```
+/usr/local/synopsys/pdk/SAED_PDK90nm/starrcxt/device_map
+```
+Layer Map:
+```
+/usr/local/synopsys/pdk/SAED_PDK90nm/starrcxt/output_layer_map
+```
+
 Now click on OK. Then you will see Customer Designer as Fig. 69.
 
 ![fig69](images/Fig_69.png)
