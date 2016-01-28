@@ -345,7 +345,7 @@ Also note that it may be helpful to give a wire in the circuit an initial voltag
 
 _**Fig. 103. Where to Click on Schematic for Node Setup in Ring Oscillator**_
 
-Setup the options as noted in Fig 104 below. You may need to setup multiple initial voltages to drive the inverters since one initial voltage may not be enough to drive the entire ring oscillator. It is suggested that you setup at least two initial voltages using alternating voltages of 0 and 1.2 for consecutive inverter nodes in the ring oscillator circuit. See Fig 105 for multi- node initialization and see Fig 103 on where to click in the schematic for node setups. Click OK, when done and run the simulation as noted in part 3 of the tutorial.
+Setup the options as noted in Fig 104 below. You may need to setup multiple initial voltages to drive the inverters since one initial voltage may not be enough to drive the entire ring oscillator. It is suggested that you setup at least two initial voltages using alternating voltages of 0 and 1.2 for consecutive inverter nodes in the ring oscillator circuit. See Fig 105 for multi- node initialization and see Fig 103 on where to click in the schematic for node setups. Click OK, when done and run the simulation as noted in part 3 of the tutorial in Fig 106
 
 
 ![fig104](images/Fig_104.png)
@@ -355,6 +355,11 @@ _**Fig. 104. Setting up Convergence Aids**_
 ![fig105](images/Fig_105.png)
 
 _**Fig. 105. Setup for Multiple Initial Voltages**_
+
+![fig106](images/Fig_106.png)
+
+_**Fig. 106. Simulation result for ring oscillator**_
+
 
 You have now finished transient simulation of the ring oscillator circuit with applied parasitics.
 
