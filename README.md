@@ -12,7 +12,7 @@ Every discussion/Q&A will be at https://github.com/tkimva/ucr-eecs168. Please us
 | Week 2	| [Lab/Tutorial 1 - Synopsys Schematic Design (Galaxy Custom Designer)/ Pre-Simulation (HSPICE)](https://github.com/tkimva/ucr-eecs168/tree/master/lab1)	| |10|
 | Week 3	| [Lab/Tutorial 2 - Synopsys Layout Design (Galaxy Custom Designer) / Design Rule Check (DRC) / Verification (LVS)](https://github.com/tkimva/ucr-eecs168/tree/master/lab2)  | Lab1 report due by the end of lab | 15 |
 |Week 4		| [Lab/Tutorial 3 - Post-Simulation with Parasitic Extraction (HSPICE). Simple Hierarchical IC Design (Target Circuit: 4bit full adder)](https://github.com/tkimva/ucr-eecs168/tree/master/lab3) | Lab2 report due by the end of lab.	| 25 |
-|Week 5		| Lab 3 (Continued) - Simple Hierarchical IC Design (Target Circuit TBA)	| | |
+|Week 5		| [Lab 3 (Continued) - Simple Hierarchical IC Design (Target Circuit: 4bit full adder)](https://github.com/tkimva/ucr-eecs168/tree/master/lab3)	| | |
 |Week 6	  | Lab 4 - Complex Hierarchical IC Design (Target Circuit TBA). | Lab3 report due by the end of lab.	| 25 |
 |Week 7		| Lab 4 (Continued) - Complex Hierarchical IC Design (Target Circuit TBA).|	| |
 |Week 8		| Lab/Tutorial 5 - Full Chip Design with RTL (Verilog, Design Compiler/IC Compiler).| Lab4 report due by the end of lab.	| 50 |
