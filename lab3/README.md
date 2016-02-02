@@ -289,7 +289,7 @@ At this point if there are any LVS errors, an error window will show up. Debug a
 
 See Fig 96 below for reference on setups.
 
-![fig96_1](images/Fig_96_1.png)
+![fig96_1](images/FIg_96_1.png)
 
 ![fig96_2](images/Fig_96_2.png)
 
