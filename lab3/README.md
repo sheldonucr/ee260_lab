@@ -142,7 +142,7 @@ To start simulation with parasitics, go to File -> Open Design from the Custom D
 
 _**Fig. 78. Open Design with Parasitics**_
 
-Afterwards, a schematic view should open up with parasitics applied, see Fig 79 below for reference. To check if the parasitics were applied, you can double click on the inverter symbol/cell and it should display the same parasitics view that was generated from running LPE. To change between parasitic and schematic views, select the desired view in the red box noted in Fig 80.
+Afterwards, a schematic view should open up with parasitics applied, see Fig 79 below for reference. To check if the parasitics were applied, you can double click on the inverter symbol/cell and it should display the same parasitics view that was generated from running LPE. To change between parasitic and schematic views, select the desired view in the yellow box noted in Fig 79.
 
 ![fig79](images/Fig_79.png)
 
