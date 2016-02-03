@@ -405,6 +405,9 @@ You can refer this full adder here.
 
 A full adder adds binary number with carry in and out. A 1-bit full adder adds three one-bit number, such as A, B, and CIN. A and B are the operands and CIN is a bit carried in from the previous less significant stage.
 
+
+
+
 ![fig108](images/Fig_108.png)
 
 _**Fig. 108. Full Adder Schematic**_
@@ -420,6 +423,10 @@ _**Fig. 109. 1-bit adder simulation (Pre-simulation)**_
 ![fig110](images/Fig_110.png)
 
 _**Fig. 110. 1-bit adder testbench schematic**_
+
+![fig111](images/Fig_111.png)
+
+_**Fig. 111. 1-bit adder logic and 4-bit ripple carry adder**_
 
 
 * Your 4-bit full adder schematic (with using hierarchical design)
