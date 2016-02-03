@@ -395,6 +395,20 @@ After clicking Ok, a frequency measurement box will appear on the waveform. Drag
 _**Fig. 39. Frequency Waveform Measurement**_
 
 
+## Tip for complex schematic drawing
+
+You don't need to draw whole wire to connect port, and you can assign the same name instead, then it becomes virtual connection. In case of many transistor being placed, you don't need to connect all bulks to AVDD or AVSS, and you can just draw wire with AVDD or AVSS nets. As seen in the Fig 41, you can draw wire along with assigning wire name.
+
+![fig40](images/fig40.png)
+
+_**Fig. 40. Nets connection by assigning the same wire name**_
+
+![fig41](images/fig41.png)
+
+_**Fig. 41. Assigning wire name with drawing wire**_
+
+
+
 ## Lab1
 
 ### Objective
