@@ -410,7 +410,7 @@ A full adder adds binary number with carry in and out. A 1-bit full adder adds t
 
 ![fig108](images/Fig_108.png)
 
-_**Fig. 108. Full Adder Schematic**_
+_**Fig. 108. 1-bit Full Adder Schematic (Transistor-Level)**_
 
 In Fig 108, there are two-stage. The first one is to generate `COUT` and the second is to generate `S` which is final sum. It requires 28 transistors including two inverters. You can use your own design but you need to transistor-level design.
 
