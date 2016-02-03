@@ -397,7 +397,7 @@ This lab is designed for two weeks, so for your lab report, you need to design `
 
 * Your post simulation result in Fig 80.
 
-* Your 1-bit full adder schematic
+* Your 1-bit full adder schematic - it must be transistor-level not logic-level
 
 You can refer this full adder here.
 
