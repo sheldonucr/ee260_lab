@@ -415,7 +415,12 @@ In Fig 108, there are two-stage. The first one is to generate `COUT` and the sec
 
 ![fig109](images/Fig_109.png)
 
-_**Fig. 108. 1-bit adder simulation (Pre-simulation)**_
+_**Fig. 109. 1-bit adder simulation (Pre-simulation)**_
+
+![fig110](images/Fig_110.png)
+
+_**Fig. 110. 1-bit adder testbench schematic**_
+
 
 * Your 4-bit full adder schematic (with using hierarchical design)
 
