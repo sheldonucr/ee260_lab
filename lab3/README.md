@@ -363,8 +363,21 @@ _**Fig. 106. Simulation result for ring oscillator**_
 
 You have now finished transient simulation of the ring oscillator circuit with applied parasitics.
 
+### Extra tutorial for use multiple layer
 
+- Using M2 Layer (or higher like M3, M4...) in Layout
 
+For designs that require require an extra metal layers in layout, designers can use a metal layer higher up (like M2) to make connections if the lower metal layers (like M1) are too constricting to allow any other connections.
+In the ring oscillator layout, M1 (blue layer) is replaced with M2 (pink layer). See Fig 107 for reference (Ring Oscillator with M2 layer). Also note that M1 layers can run under M2 layers without physically connecting unless there is a VIA1 layer in between them.
+
+![fig107](images/Fig_107.png)
+
+_**Fig. 107. Multiple layer (M2) example**_
+
+In order to connect different layers to each other, all metal layers and contacts/VIAs must exist in between them. For example, to connect a metal 2 layer (M2) to diffusion (DIFF), a contact layer (CO), metal 1 layer (M1), and a VIA1 layer must exist between them. See figure 107 for reference. Also see figure 106 in circle A for a layout drawing example.
+To use higher metal layers not shown, use their corresponding VIA layers to interconnect between the desired layers. For example, to connect M2 to M3, a VIA2 layer/contact must be drawn in between them.
+
+Contact (CO) size 0.13um x 0.13um but VIA1 size is 0.14um x 0.14um for 90nm design.
 
 ## Lab3
 
@@ -372,7 +385,7 @@ You have now finished transient simulation of the ring oscillator circuit with a
 
 Lab3 is to learn how to do parasitic extraction/ post layout simulation and hierarchical design. You will use your Inverter design for your parasitic extraction and post layout simulation. For your hierarchical design, you will eventually design Ring Oscillator. You need to check off until Ring Oscillator.
 
-This lab is designed for two weeks, so for your lab report, you need to design `4-bit binary full adder` schematic, layout (DRC,LVS pass) and post layout simulation, which requires Hierarchical Design skill. The 1-bit adder requires 5 NAND gates.
+This lab is designed for two weeks, so for your lab report, you need to design `4-bit binary full adder` schematic, layout (DRC,LVS pass) and post layout simulation, which requires Hierarchical Design skill. The 1-bit adder requires 9 NAND gates. Inputs are A, B, CIN and outputs are S and COUT.
 
 ### Deliverables for your lab report.
 
