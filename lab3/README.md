@@ -385,7 +385,7 @@ Contact (CO) size 0.13um x 0.13um but VIA1 size is 0.14um x 0.14um for 90nm desi
 
 Lab3 is to learn how to do parasitic extraction/ post layout simulation and hierarchical design. You will use your Inverter design for your parasitic extraction and post layout simulation. For your hierarchical design, you will eventually design Ring Oscillator. You need to check off until Ring Oscillator.
 
-This lab is designed for two weeks, so for your lab report, you need to design `4-bit binary full adder` schematic, layout (DRC,LVS pass) and post layout simulation, which requires Hierarchical Design skill. The 1-bit adder requires 9 NAND gates. Inputs are A, B, CIN and outputs are S and COUT.
+This lab is designed for two weeks, so for your lab report, you need to design `4-bit binary full adder` schematic, layout (DRC,LVS pass) and post layout simulation, which requires Hierarchical Design skill. The 1-bit adder requires 14-PMOS, 14-NMOS, total 28 transistors. Inputs are A, B, CIN and outputs are S and COUT.
 
 ### Deliverables for your lab report.
 
