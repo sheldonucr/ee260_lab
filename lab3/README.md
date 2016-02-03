@@ -430,8 +430,8 @@ for example, my ucr Net ID is `tkim049`, so do like following
 
 * Two weeks.
 
-* eecs168-021: by 11:59pm on 2/15
-* eecs168-022: by 11:59pm on 2/11
+* eecs168-021: by 11:59pm on 2/22
+* eecs168-022: by 11:59pm on 2/18
 
 ### Checkoff
 
@@ -439,7 +439,8 @@ for example, my ucr Net ID is `tkim049`, so do like following
 
 * Second week: Check off your 1-bit full adder layout (DRC, LVS should be okay) and post-simulation
 
+* Three week: Check off your 4-bit full adder layout (DRC, LVS should be okay) and post-simulation
 
 ### Next lab
 
-In lab 4, you will design 4-bit SRAM shift register.
+In lab 4 (last one), you will full chip design.
