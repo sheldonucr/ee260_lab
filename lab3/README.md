@@ -385,7 +385,7 @@ Contact (CO) size 0.13um x 0.13um but VIA1 size is 0.14um x 0.14um for 90nm desi
 
 Lab3 is to learn how to do parasitic extraction/ post layout simulation and hierarchical design. You will use your Inverter design for your parasitic extraction and post layout simulation. For your hierarchical design, you will eventually design Ring Oscillator. You need to check off until Ring Oscillator.
 
-This lab is designed for two weeks, so for your lab report, you need to design `4-bit binary full adder` schematic, layout (DRC,LVS pass) and post layout simulation, which requires Hierarchical Design skill. The 1-bit adder requires 14-PMOS, 14-NMOS, total 28 transistors. Inputs are A, B, CIN and outputs are S and COUT.
+This lab is designed for two weeks, so for your lab report, you need to design `Ripple-carry 4-bit binary full adder` schematic, layout (DRC,LVS pass) and post layout simulation, which requires Hierarchical Design skill. The 1-bit adder requires 14-PMOS, 14-NMOS, total 28 transistors. Inputs are A, B, CIN and outputs are S and COUT.
 
 ### Deliverables for your lab report.
 
@@ -398,6 +398,24 @@ This lab is designed for two weeks, so for your lab report, you need to design `
 * Your post simulation result in Fig 80.
 
 * Your 1-bit full adder schematic
+
+You can refer this full adder here.
+
+[https://en.wikipedia.org/wiki/Adder_%28electronics%29](https://en.wikipedia.org/wiki/Adder_%28electronics%29)
+
+A full adder adds binary number with carry in and out. A 1-bit full adder adds three one-bit number, such as A, B, and CIN. A and B are the operands and CIN is a bit carried in from the previous less significant stage.
+
+![fig108](images/Fig_108.png)
+
+_**Fig. 108. Full Adder Schematic**_
+
+In Fig 108, there are two-stage. The first one is to generate `COUT` and the second is to generate `S` which is final sum. It requires 28 transistors including two inverters. You can use your own design but you need to transistor-level design.
+
+* Your 1-bit full adder simulation
+
+![fig109](images/Fig_109.png)
+
+_**Fig. 108. 1-bit adder simulation (Pre-simulation)**_
 
 * Your 4-bit full adder schematic (with using hierarchical design)
 
