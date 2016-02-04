@@ -431,6 +431,12 @@ _**Fig. 111. 1-bit adder logic and 4-bit ripple carry adder**_
 
 * Your 4-bit full adder schematic (with using hierarchical design)
 
+![fig112](images/Fig_112.png)
+
+_**Fig. 112. 1-bit full adder layout hint**_
+
+
+
 * Your 1-bit full adder layout
 
 * Your 4-bit full adder layout (with using hierarchical design)
