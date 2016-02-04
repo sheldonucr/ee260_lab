@@ -395,7 +395,7 @@ After clicking Ok, a frequency measurement box will appear on the waveform. Drag
 _**Fig. 39. Frequency Waveform Measurement**_
 
 
-## Tip for complex schematic drawing
+## Schematic Tips 
 
 You don't need to draw whole wire to connect port, and you can assign the same name instead, then it becomes virtual connection. In case of many transistor being placed, you don't need to connect all bulks to AVDD or AVSS, and you can just draw wire with AVDD or AVSS nets. As seen in the Fig 41, you can draw wire along with assigning wire name.
 
@@ -407,7 +407,6 @@ _**Fig. 40. Nets connection by assigning the same wire name**_
 
 _**Fig. 41. Assigning wire name with drawing wire**_
 
-## Tip
 
 When you have some weird warning message for solder dot on crossing wires like Fig 41, then please revise as Fig 42. 
 Fig 41 and Fig 42 are both correct but they generate some warning since Fig 41 is a common possible unexpected wrong connection.
