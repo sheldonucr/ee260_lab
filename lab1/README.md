@@ -407,7 +407,19 @@ _**Fig. 40. Nets connection by assigning the same wire name**_
 
 _**Fig. 41. Assigning wire name with drawing wire**_
 
+## Tip
 
+When you have some weird warning message for solder dot on crossing wires like Fig 41, then please revise as Fig 42. 
+Fig 41 and Fig 42 are both correct but they generate some warning since Fig 41 is a common possible unexpected wrong connection.
+![fig40](images/fig40.png)
+
+_**Fig. 42. Cross wires warning**_
+
+![fig42](images/fig42.png)
+
+_**Fig. 43. a solution for warning**_
+
+![fig43](images/fig43.png)
 
 ## Lab1
 
