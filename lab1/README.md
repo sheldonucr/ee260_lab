@@ -411,7 +411,6 @@ _**Fig. 41. Assigning wire name with drawing wire**_
 
 When you have some weird warning message for solder dot on crossing wires like Fig 41, then please revise as Fig 42. 
 Fig 41 and Fig 42 are both correct but they generate some warning since Fig 41 is a common possible unexpected wrong connection.
-![fig40](images/fig40.png)
 
 _**Fig. 42. Cross wires warning**_
 
