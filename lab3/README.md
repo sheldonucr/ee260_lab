@@ -433,7 +433,7 @@ _**Fig. 111. 1-bit adder logic and 4-bit ripple carry adder**_
 
 ![fig112](images/Fig_112.png)
 
-_**Fig. 112. 1-bit full adder layout hint**_
+_**Fig. 112. 1-bit full adder layout hint (Diffusion width must be the same as schematic Width = 0.5um for PMOS and Width = 0.25um for NMOS**_
 
 
 
