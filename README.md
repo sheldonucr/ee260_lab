@@ -16,8 +16,8 @@ Every discussion/Q&A will be at https://github.com/tkimva/ucr-eecs168. Please us
 |Week 6	  | [Lab/Tutorial 3 - Hierarchical IC Design (Target Circuit: 4-bit full adder-use Hierarchical)](https://github.com/tkimva/ucr-eecs168/tree/master/lab3) | 	|  |
 |Week 7   | Holiday makeup for 1/18, no lab |Lab3 report due by the end of lab.	 | |
 |Week 8		| Lab/Tutorial 4 - RTL Design (Verilog, Design Compiler/IC Compiler).|| 35 |
-|Week 9		| Lab/Tutorial 4 (Continued) - Complex RTL Design| 	|  |
-|Week 10		| Lab/Tutorial 4 (Continued) - Full Chip Design	|  |  |
+|Week 9		| Lab/Tutorial 4 - Complex RTL Design| 	|  |
+|Week 10	| Lab/Tutorial 4 - Full Chip Design	|  |  |
 |Final Week | No lab |  |Lab4 report due by Thursday.  | |
 
 ### Attendance Policy
