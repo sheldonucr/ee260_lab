@@ -11,14 +11,14 @@ Every discussion/Q&A will be at https://github.com/tkimva/ucr-eecs168. Please us
 | Week 1	|	[Pre-Lab - ENGR account checkup / Linux System Basic](https://github.com/tkimva/ucr-eecs168/tree/master/lab0)	| | |
 | Week 2	| [Lab/Tutorial 1 - Synopsys Schematic Design (Galaxy Custom Designer)/ Pre-Simulation (HSPICE)](https://github.com/tkimva/ucr-eecs168/tree/master/lab1)	| |10|
 | Week 3	| [Lab/Tutorial 2 - Synopsys Layout Design (Galaxy Custom Designer) / Design Rule Check (DRC) / Verification (LVS)](https://github.com/tkimva/ucr-eecs168/tree/master/lab2)  | Lab1 report due by the end of lab | 15 |
-|Week 4		| [Lab/Tutorial 3 - Post-Simulation with Parasitic Extraction (HSPICE). Simple Hierarchical IC Design (Target Circuit: Ring Oscillator)](https://github.com/tkimva/ucr-eecs168/tree/master/lab3) | Lab2 report due by the end of lab.	| 25 |
+|Week 4		| [Lab/Tutorial 3 - Post-Simulation with Parasitic Extraction (HSPICE). Simple Hierarchical IC Design (Target Circuit: Ring Oscillator)](https://github.com/tkimva/ucr-eecs168/tree/master/lab3) | Lab2 report due by the end of lab.	| 40 |
 |Week 5		| [Lab/Tutorial 3 - Post-Simulation with Parasitic Extraction (HSPICE). Hierarchical IC Design (Target Circuit: 1-bit full adder-no hierarchical design)](https://github.com/tkimva/ucr-eecs168/tree/master/lab3)	| | |
 |Week 6	  | [Lab/Tutorial 3 - Post-Simulation with Parasitic Extraction (HSPICE). Hierarchical IC Design (Target Circuit: 4-bit full adder-use Hierarchical)](https://github.com/tkimva/ucr-eecs168/tree/master/lab3) | 	|  |
-|Week 7		| Lab/Tutorial 4 - Full Chip Design with RTL (Verilog, Design Compiler/IC Compiler).|Lab3 report due by the end of lab.	| 50 |
-|Week 8		| Lab/Tutorial 4 (Continued) - Full Chip Design| 	|  |
-|Week 9		| Lab/Tutorial 4 (Continued) - Full Chip Design	|  |  |
-|Week 10	| TBA	|Lab4 report due by the end of lab.  |  |
-|Final Week | No lab |  |  | |
+|Week 7   | Holiday makeup for 1/18, no lab | | |
+|Week 8		| Lab/Tutorial 4 - Full Chip Design with RTL (Verilog, Design Compiler/IC Compiler).|Lab3 report due by the end of lab.	| 35 |
+|Week 9		| Lab/Tutorial 4 (Continued) - Full Chip Design| 	|  |
+|Week 10		| Lab/Tutorial 4 (Continued) - Full Chip Design	|  |  |
+|Final Week | No lab |  |Lab4 report due by Thursday.  | |
 
 ### Attendance Policy
 
