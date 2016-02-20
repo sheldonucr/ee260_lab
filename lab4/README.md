@@ -7,11 +7,21 @@ In this tutorial, you will learn how to do RTL (register transfer level) design 
 
 This work design for three weeks lab, so for your lab report, you need to design three sets of HDLs, which are 4-bit binary full adder, greatest common devisor (gcd), and finally full-chip design.
 
+In this lab4, we introduce Design Compiler, IC Compiler, VCS
+
 ## Design Compiler for Synthesis
 
 1. launch dc_shell for design compiler.
+![fig1](images/fig1.png)
+
+_**Fig. 1. Launch Design Compiler**_
 
 1. launch gui_start for design vision, which is GUI interface for design compiler
+![fig2](images/fig2.png)
+
+_**Fig. 2. Launch Design Vision for GUI Version of Design Compiler**_
+
+
 
 1. File-> Setup and choose model for your library
 
