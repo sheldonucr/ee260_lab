@@ -8,18 +8,15 @@ In this tutorial, you will learn how to do RTL (register transfer level) design 
 This work design for three weeks lab, so for your lab report, you need to design three sets of HDLs, which are 4-bit binary full adder, greatest common devisor (gcd), and finally full-chip design.
 
 
-In this lab4, we introduce Design Compiler, IC Compiler, VCS RTL Verification solution.
-
-The following figure shows the Synopsys RTL Design following
-
-
+In this lab4, we introduce VCS, Design Compiler, IC Compiler, VCS RTL Verification solution.
 
 
 In this lab, you need to review at least 2 hours for the following website to review your Verilog programming skill, debugging method, and design examples. After 2 hours review, you need to follow RTL design step to make the final layout with design automation process.
 
 For the Verilog editor, `vi` or `emacs` is recommended, but if you're beginner of Linux system, you can use `nano`
 
-## Lab4
+
+## Lab4 Abstract
 
 Lab4 is 3-week lab and here are the details for given lab
 
@@ -29,17 +26,68 @@ Lab4 is 3-week lab and here are the details for given lab
 
 - Lab4-week3: Full-chip synthesis design and layout for Synopsys ChipTop processor (check off: ChipTop processor chip layout)
 
-## Lab4-Week1: Verilog Language Training
+
+## Lab4-Week1: HDL (Hardware Description Language)- Verilog Language
+
+We will use Verilog, which is standardized as IEEE 1364, a hardware description language (HDL) used to model electronic systems. It is most commonly used in the design and verification of digital circuits at the register-transfer level of abstraction. ([refer Wikipedia](https://en.wikipedia.org/wiki/Verilog))
+
+This lab tutorials consist of 9 Chapters as follows:
+
+
+- CHAPTER 1 - Introduction, Hierarchy, and Modelling Structures.
+
+This section provides background about the history of Verilog. It also introduces some of the basic contructs of Verilog models.
+
+
+
+- CHAPTER 2 - Syntax, Lexical Conventions, Data Types, and Memories
+
+This section addresses the syntax and semantics of the core features of the language.
+
+
+
+- CHAPTER 3 - Expressions and Simulation Mechanics
+
+This section covers the components of Verilog expressions and the order of execution in Verilog models.
+
+
+
+- CHAPTER 4 - Gate Level Modelling
+
+This section covers gate level modelling constructs. It covers the semantics of Verilog primitives, port expressions, delays, strengths, and user-defined primitives.
+
+
+
+- CHAPTER 5 - Behavioral and Register Transfer Level Modelling
+
+This section covers the remainder of the language basics: assignments of all kinds, control constructs, time and event controls, tasks and functions, and examples.
+
+
+
+
+
+
+You need to review from chapter 1 thru Chapter 5, Chapter 5-9 can be references for your Verilog programming.
+
+You need to provide all your answers for the each question to get checked off. So please open text editor and write down all the answers to show me for the check off.
 
 Go to the following Verilog tutorial
 
 [Verilog Tutorial](http://vol.verilog.com/VOL/main.htm)
 
-It is recommended for you to review all the chapter, but in this lab4, we will ask you review Chapter 1 to Chapter 5. Chapter 5-9 can be references.
 
-You need to provide all your answers for the each question to get checked off. So please open text file and write down all the answers.
+__This lab requires individual lab! You cannot do any partner work anymore.__
 
-__This lab requires individual lab! You cannot do any parter work anymore.__
+
+### Synopsys Verilog Compiler Simulator (Verilog Compiler ) Tutorial
+
+
+
+
+
+
+
+
 
 
 
