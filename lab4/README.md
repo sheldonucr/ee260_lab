@@ -672,14 +672,6 @@ In this lab4, we introduce Synopsys RTL design toolkit, which are VCS, Design Co
   * Final layout in Fig 49 for 4-bit full adder.
 
 ---- until here for week1 check off
----- in your lab4 report, you should include the following design
-
-  * Finite State Machine simulation result from `VCS`.
-
-  * Final layout for Finite State Machine.
-
----- until here for week1 lab report.
-
 
 * week 2 checkoff
 
