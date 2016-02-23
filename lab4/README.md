@@ -35,11 +35,11 @@ Here is Verilog tutorials consist of 5 Chapters as follows:
 
 | Chapter  | Title | Detail |
 | -------- | ------ | ------- |
-| 1 | Introduction, Hierarchy, and Modelling Structures. | This section provides background about the history of Verilog. It also introduces some of the basic structures of Verilog models. |
+| 1 | Introduction, Hierarchy, and Modeling Structures. | This section provides background about the history of Verilog. It also introduces some of the basic structures of Verilog models. |
 | 2 | Syntax, Lexical Conventions, Data Types, and Memories | This section addresses the syntax and semantics of the core features of the language. |
 | 3 | Expressions and Simulation Mechanics | This section covers the components of Verilog expressions and the order of execution in Verilog models. |
-| 4 | Gate Level Modelling | This section covers gate level modelling constructs. It covers the semantics of Verilog primitives, port expressions, delays, strengths, and user-defined primitives. |
-| 5 | Behavioral and Register Transfer Level Modelling | This section covers the remainder of the language basics: assignments of all kinds, control constructs, time and event controls, tasks and functions, and examples. |
+| 4 | Gate Level Modeling | This section covers gate level modeling constructs. It covers the semantics of Verilog primitives, port expressions, delays, strengths, and user-defined primitives. |
+| 5 | Behavioral and Register Transfer Level Modeling | This section covers the remainder of the language basics: assignments of all kinds, control constructs, time and event controls, tasks and functions, and examples. |
 
 You need to review from chapter 1 thru Chapter 5, Chapter 5-9 can be references for your Verilog programming.
 
