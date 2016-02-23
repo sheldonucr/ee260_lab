@@ -638,7 +638,13 @@ insert_stdcell_filler \
 
 _**Fig. 49. Final Layout after putting standard cell filler**_
 
-## Lab4
+
+## Lab4-Week2 : TBA
+
+## Lab4-Week3 : TBA
+
+
+## Lab4 Logistics
 
 ### Objective
 
@@ -711,8 +717,8 @@ for example, my ucr Net ID is `tkim049`, so do like following
 
 * Two weeks.
 
-* eecs168-021: by 11:59pm on 2/22
-* eecs168-022: by 11:59pm on 2/18
+* eecs168-021: by 11:59pm on 3/14
+* eecs168-022: by 11:59pm on 3/16
 
 ### Checkoff
 
