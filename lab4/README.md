@@ -98,8 +98,8 @@ cd counter
 and download two files
 
 ```
-wget https://github.com/tkimva/ucr-eecs168/tree/master/lab4/counter.v
-wget https://github.com/tkimva/ucr-eecs168/tree/master/lab4/counter_tb.v
+wget https://raw.githubusercontent.com/tkimva/ucr-eecs168/master/lab4/counter.v
+wget https://raw.githubusercontent.com/tkimva/ucr-eecs168/master/lab4/counter_tb.v
 ```
 
 1. In the “lab4-rtl” directory, compile the verilog source code by typing the following at the
