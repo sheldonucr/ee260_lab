@@ -210,7 +210,7 @@ Mon Feb 22 13:45:00 2016
 
 ```
 
-For your lab report, you need to simulate a code for `Finite State Machine (FSM)` as an example in the Chapter 5 in tutorial [Verilog Tutorial](http://vol.verilog.com/VOL/main.htm)
+For your weekly checkoff and lab report, you need to simulate a code for `Finite State Machine (FSM)` as an example in the Chapter 5 in tutorial [Verilog Tutorial](http://vol.verilog.com/VOL/main.htm)
 
 
 ## Lab4-Week1: Part 3. Design Compiler for Synthesis
@@ -638,7 +638,7 @@ insert_stdcell_filler \
 
 _**Fig. 49. Final Layout after putting standard cell filler**_
 
-## Lab3
+## Lab4
 
 ### Objective
 
@@ -652,6 +652,34 @@ In this lab4, we introduce Synopsys RTL design toolkit, which are VCS, Design Co
 ### Deliverables for your lab report.
 
 * Name, SID, Session(021,022), ENGR ID, UCR NetID, your partner name
+
+---- week1 checkoff from here
+
+  * Answers of all the questions from Verilog tutorial in Chapter 1 to 5.
+
+  * Simulation result of example counter.
+
+  * The result of gate-level for 4-bit full adder, fa_4bit_synthesized.v
+
+  * Final layout in Fig 49 for 4-bit full adder.
+
+---- until here for week1 check off
+---- in your lab4 report, you should include the following design
+
+  * Finite State Machine simulation result from `VCS`.
+
+  * Final layout for Finite State Machine.
+
+---- until here for week1 lab report.
+
+
+* week 2 checkoff
+
+  * TBA
+
+* week 3 checkoff
+
+  * TBA
 
 * Some of the issues if you have (One paragraph)
 
@@ -688,8 +716,8 @@ for example, my ucr Net ID is `tkim049`, so do like following
 
 ### Checkoff
 
-* First week: Check off answers from Verilog tutorial
+* First week: Refer above deliverables
 
-* Second week: TBA
+* Second week: Refer above deliverables
 
-* Three week: TBA
+* Three week: Refer above deliverables
