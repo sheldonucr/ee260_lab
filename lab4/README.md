@@ -20,11 +20,11 @@ In this lab, you need to review at least 2 hours for the following website to re
 
 Lab4 is 3-week lab and here are the details for given lab
 
-- Lab4-week1: Verilog Review, 4-bit full adder Chip, FSM chip design. (check off: Verilog Review Answer and 4-bit full adder chip RTL simulation and chip layout)
+- Lab4-week1: Verilog Review, 4-bit full adder Chip, FSM chip design.
 
-- Lab4-week2: Your GCD design (check off: GCD RTL code and simulation result and chip layout result) with Timing Analysis of PrimeTime.
+- Lab4-week2: Your GCD design with Timing, Area, and Power Analysis of PrimeTime.
 
-- Lab4-week3: Full-chip synthesis design and layout for Synopsys ChipTop processor (check off: ChipTop processor chip layout)
+- Lab4-week3: Full-chip synthesis design and layout for Synopsys ChipTop processor
 
 
 ## Lab4-Week1: Part 1. HDL (Hardware Description Language)- Verilog Language
@@ -714,8 +714,6 @@ for example, my ucr Net ID is `tkim049`, so do like following
 * You need to submit two files (\*.pdf, \*.tgz) in iLearn
 
 ### Lab Report Due
-
-* Two weeks.
 
 * eecs168-021: by 11:59pm on 3/14
 * eecs168-022: by 11:59pm on 3/16
