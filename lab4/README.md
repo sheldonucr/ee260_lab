@@ -47,7 +47,9 @@ You need to provide all your answers for the each question to get checked off at
 
 Go to the following Verilog tutorial
 
-[Verilog Tutorial](http://vol.verilog.com/VOL/main.htm)
+__[Click here for Verilog Tutorial](http://vol.verilog.com/VOL/main.htm)__
+
+YOu should finish this tutorial first for 2 hours at least.
 
 
 __This lab requires individual lab! You cannot do any partner work anymore.__
