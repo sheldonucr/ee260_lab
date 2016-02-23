@@ -239,9 +239,9 @@ module fa_4bit( cin, cout, ain, bin, sum );
 	output [3:0] sum;
 	output cout;
 
-	assign (cout,sum) = ain + bin + cin;
+	assign {cout,sum} = ain + bin + cin;
 
-endmoudle // fa_4bit
+endmodule // fa_4bit
 
 ```
 
