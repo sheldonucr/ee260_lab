@@ -585,7 +585,7 @@ _**Fig. 39. Floor plan is ready**_
 
 ![fig40](images/fig40.png)
 
-_**Fig. 40. Stardard cell placed**_
+_**Fig. 40. Standard cell placed**_
 
 Now, we make floorplan rail for VDD and VSS.
 
@@ -622,7 +622,7 @@ route_opt -skip_initial_route -effort low
 
 ![fig47](images/fig47.png)
 
-_**Fig. 47. Rail Placed**_
+_**Fig. 47. Routing Done**_
 
 Finally, we need standard cell fillers, which are used to fill any spaces between regular library cells to avoid planarity problems. They are need when the density of the required metal or layer has not meet the foundry or fabrication requirement. Thus, you need to add it whether it is low or high frequency.
 
