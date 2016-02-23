@@ -532,7 +532,7 @@ _**Fig. 33. Save your design**_
 
 Now, we need to create the floorplan. Floorplan -> Create Floorplan
 
-For the spacing bettwen core are and terminals, we can set 10um for
+For the spacing between core are and terminals, we can set 10um for
 left, right, bottom, and top.
 
 
