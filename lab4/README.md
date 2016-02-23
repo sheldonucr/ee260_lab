@@ -105,7 +105,7 @@ wget https://raw.githubusercontent.com/tkimva/ucr-eecs168/master/lab4/counter_tb
 1. In the “lab4-rtl” directory, compile the verilog source code by typing the following at the
 machine prompt.
 ```
-[tkim@storm counter]:vcs counter_tb.v counter.v +v2k
+vcs counter_tb.v counter.v +v2k
 ```
 
 You can see the following successful compilation message
@@ -165,7 +165,7 @@ from both vcs and simulation and should produce a waveform file called counter.d
 your working directory.
 
 ```
-[tkim@storm counter]:./simv
+./simv
 ```
 
 Simulation result will be shown as below
@@ -249,7 +249,7 @@ endmodule // fa_4bit
 One Verilog file is ready. We need to do SYNTHESIS, which is a transformation process from RTL to gate-level design (another synthesized Verilog). Type the following command to launch Design Compiler.
 
 ```
-[tkim@storm fa_4bit]:dc_shell
+dc_shell
 ```
 
 - launch dc_shell for design compiler.
