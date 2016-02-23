@@ -212,7 +212,6 @@ Mon Feb 22 13:45:00 2016
 
 ```
 
-For your weekly checkoff and lab report, you need to simulate a code for `Finite State Machine (FSM)` as an example in the Chapter 5 in tutorial [Verilog Tutorial](http://vol.verilog.com/VOL/main.htm)
 
 
 ## Lab4-Week1: Part 3. Design Compiler for Synthesis
