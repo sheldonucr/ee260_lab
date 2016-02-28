@@ -20,11 +20,11 @@ In this lab, you need to review at least 2 hours for the following website to re
 
 Lab4 is 3-week lab and here are the details for given lab
 
-- Lab4-week1: Verilog Review, 4-bit full adder Chip, FSM chip design. (check off: Verilog Review Answer and 4-bit full adder chip RTL simulation and chip layout)
+- Lab4-week1: Verilog Review, 4-bit full adder Chip, FSM chip design.
 
-- Lab4-week2: Your GCD design (check off: GCD RTL code and simulation result and chip layout result) with Timing Analysis of PrimeTime.
+- Lab4-week2: Your GCD design with Timing, Area, and Power Analysis of PrimeTime.
 
-- Lab4-week3: Full-chip synthesis design and layout for Synopsys ChipTop processor (check off: ChipTop processor chip layout)
+- Lab4-week3: Full-chip synthesis design and layout for Synopsys ChipTop processor
 
 
 ## Lab4-Week1: Part 1. HDL (Hardware Description Language)- Verilog Language
@@ -47,8 +47,12 @@ You need to provide all your answers for the each question to get checked off at
 
 Go to the following Verilog tutorial
 
-[Verilog Tutorial](http://vol.verilog.com/VOL/main.htm)
+__[Click here for Verilog Tutorial](http://vol.verilog.com/VOL/main.htm)__
 
+You should finish this tutorial first for 2 hours at least.
+
+
+There is better explanation for Verolog Operators [Click Here](https://embeddedmicro.com/tutorials/mojo/verilog-operators) - Thanks, Brandon
 
 __This lab requires individual lab! You cannot do any partner work anymore.__
 
@@ -96,14 +100,14 @@ cd counter
 and download two files
 
 ```
-wget https://github.com/tkimva/ucr-eecs168/tree/master/lab4/counter.v
-wget https://github.com/tkimva/ucr-eecs168/tree/master/lab4/counter_tb.v
+wget https://raw.githubusercontent.com/tkimva/ucr-eecs168/master/lab4/counter.v
+wget https://raw.githubusercontent.com/tkimva/ucr-eecs168/master/lab4/counter_tb.v
 ```
 
 1. In the “lab4-rtl” directory, compile the verilog source code by typing the following at the
 machine prompt.
 ```
-[tkim@storm counter]:vcs counter_tb.v counter.v +v2k
+vcs counter_tb.v counter.v +v2k
 ```
 
 You can see the following successful compilation message
@@ -163,7 +167,7 @@ from both vcs and simulation and should produce a waveform file called counter.d
 your working directory.
 
 ```
-[tkim@storm counter]:./simv
+./simv
 ```
 
 Simulation result will be shown as below
@@ -210,7 +214,6 @@ Mon Feb 22 13:45:00 2016
 
 ```
 
-For your weekly checkoff and lab report, you need to simulate a code for `Finite State Machine (FSM)` as an example in the Chapter 5 in tutorial [Verilog Tutorial](http://vol.verilog.com/VOL/main.htm)
 
 
 ## Lab4-Week1: Part 3. Design Compiler for Synthesis
@@ -248,7 +251,7 @@ endmodule // fa_4bit
 One Verilog file is ready. We need to do SYNTHESIS, which is a transformation process from RTL to gate-level design (another synthesized Verilog). Type the following command to launch Design Compiler.
 
 ```
-[tkim@storm fa_4bit]:dc_shell
+dc_shell
 ```
 
 - launch dc_shell for design compiler.
@@ -585,7 +588,7 @@ _**Fig. 39. Floor plan is ready**_
 
 ![fig40](images/fig40.png)
 
-_**Fig. 40. Stardard cell placed**_
+_**Fig. 40. Standard cell placed**_
 
 Now, we make floorplan rail for VDD and VSS.
 
@@ -622,7 +625,7 @@ route_opt -skip_initial_route -effort low
 
 ![fig47](images/fig47.png)
 
-_**Fig. 47. Rail Placed**_
+_**Fig. 47. Routing Done**_
 
 Finally, we need standard cell fillers, which are used to fill any spaces between regular library cells to avoid planarity problems. They are need when the density of the required metal or layer has not meet the foundry or fabrication requirement. Thus, you need to add it whether it is low or high frequency.
 
@@ -638,7 +641,13 @@ insert_stdcell_filler \
 
 _**Fig. 49. Final Layout after putting standard cell filler**_
 
-## Lab4
+
+## Lab4-Week2 : TBA
+
+## Lab4-Week3 : TBA
+
+
+## Lab4 Logistics
 
 ### Objective
 
@@ -664,14 +673,6 @@ In this lab4, we introduce Synopsys RTL design toolkit, which are VCS, Design Co
   * Final layout in Fig 49 for 4-bit full adder.
 
 ---- until here for week1 check off
----- in your lab4 report, you should include the following design
-
-  * Finite State Machine simulation result from `VCS`.
-
-  * Final layout for Finite State Machine.
-
----- until here for week1 lab report.
-
 
 * week 2 checkoff
 
@@ -709,10 +710,8 @@ for example, my ucr Net ID is `tkim049`, so do like following
 
 ### Lab Report Due
 
-* Two weeks.
-
-* eecs168-021: by 11:59pm on 2/22
-* eecs168-022: by 11:59pm on 2/18
+* eecs168-021: by 11:59pm on 3/14
+* eecs168-022: by 11:59pm on 3/16
 
 ### Checkoff
 
