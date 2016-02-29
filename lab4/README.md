@@ -642,15 +642,24 @@ insert_stdcell_filler \
 _**Fig. 49. Final Layout after putting standard cell filler**_
 
 
-## Lab4-Week2 :
+## Lab4-Week2 : Delay and Power estimations with PrimeTime and Complex RTL design
 
 ### Summary of what you did for lab4-week1
 
+![Fig. 50](images/synopsys_tool_flow.png)
+
+_**Fig. 50. Full RTL and Physical Toolflow for IC design**_
+
+So far, we used Verilog Compiler Simulator (VCS) for RTL simulation, Design Compiler for Logic Synthesis, and IC Compiler for Layout. Now, we will use PrimeTime which is signoff tool and enable accurate delay and power estimations.
+
+Signoff users have a few key requirements for their signoff tool of choice, runtime and capacity to handle their largest chip size requirements, efficient multi-scenario analysis to verify timing across all corners and modes, margin control to reduce over-design and maximize chip performance, and accuracy to ensure correlation to silicon. The Synopsys PrimeTime Suite addresses these requirements by delivering fast, memory-efficient scalar and multicore computing, distributed multi-scenario analysis and ECO fixing, using variation-aware Composite Current Source (CCS) modeling that extends static timing analysis to include crosstalk timing, noise, power and constraint analysis.
+
+It delivers HSPICE accurate signoff analysis that helps pinpoint problems prior to tapeout thereby reducing risk, ensuring design integrity, and lowering the cost of design. This industry gold-standard solution improves designers' productivity by delivering fast turnaround on development schedules for large and small designs while ensuring first-pass silicon success through greater predictability and the highest accuracy.
+
+- See more at: http://www.synopsys.com/Tools/Implementation/SignOff/Pages/PrimeTime.aspx#sthash.qfYroAvS.dpuf
 
 
-
-
-###
+### Complex RTL design for GCD or 1D-DCT
 
 
 
