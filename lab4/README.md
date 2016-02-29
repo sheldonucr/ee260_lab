@@ -642,7 +642,38 @@ insert_stdcell_filler \
 _**Fig. 49. Final Layout after putting standard cell filler**_
 
 
-## Lab4-Week2 : TBA
+## Lab4-Week2 :
+
+### Summary of what you did for lab4-week1
+
+
+
+
+
+###
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Lab4-Week3 : TBA
 
