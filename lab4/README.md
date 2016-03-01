@@ -763,7 +763,7 @@ Here is some methodology how we can make some RTL Design from behavioral RTL des
 
 - __2nd step:__ Define module ports
 
-  Define module ports as below
+  Define module ports
 
 
 
