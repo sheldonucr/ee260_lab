@@ -852,7 +852,7 @@ After you finished your RTL design, then you need to synthesize with Design Comp
 
 ##### Design Compiler and IC Compiler for GCD
 
-GCD requires clock and you also need to synthesize clock tree. For your GCD, every step is the same as 4-bit full adder example from RTL to Layout except the following extra steps.
+GCD requires clock and you also need to synthesize clock tree. For your GCD, every step is __the same as above 4-bit full adder steps__ from RTL to Layout except the following extra steps.
 
 ###### Design Compiler Changes for GCD.
 
