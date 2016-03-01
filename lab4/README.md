@@ -774,7 +774,7 @@ Here is some methodology how we can make some RTL Design from behavioral RTL des
 
 
 
-The detail can be found [this slides](https://cseweb.ucsd.edu/classes/wi08/cse141L/Slides/verilog_deux.pdf)
+The detail methodology and GCD RTL can be found [this slides](https://cseweb.ucsd.edu/classes/wi08/cse141L/Slides/verilog_deux.pdf)
 
 Total system block is look like below.
 
