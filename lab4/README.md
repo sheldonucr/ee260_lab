@@ -780,6 +780,10 @@ Total system block is look like below.
 
 
 We provide three following incomplete RTL designs (Verilog) from above behavioral code for GCD algorithm. You should complete this file to go next part.
+The code are needed at the following comment region
+```
+// code here for EECS168
+```
 
 - GCD Top Design: `gcd_rtl.v`
 - GCD Control: `gcd_ctrl.v`
