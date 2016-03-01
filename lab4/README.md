@@ -654,7 +654,7 @@ Lab4-week2, we work on GCD algorithm, which is a popular algorithm for computing
 
 Here is GCD algorithm.
 
-Following is the Euclid’s algorithm to compute GCD of two numbers, A and B. The algorithm was reported by J. Stein in 1967 and is available on the web at http://www.nist.gov/dads/HTML/bina- ryGCD.html (link is perhaps inactive) and also at http://en.wikipedia.org/wiki/Binary_GCD_algorithm.
+Following is the Euclid’s algorithm to compute GCD of two numbers, A and B. The algorithm was reported by J. Stein in 1967 and is available on the web at http://www.nist.gov/dads/HTML/binaryGCD.html (link is perhaps inactive) and also at http://en.wikipedia.org/wiki/Binary_GCD_algorithm.
 
 
 
@@ -846,11 +846,6 @@ CPU Time:      0.640 seconds;       Data structure size:   0.0Mb
 Mon Feb 29 16:50:13 2016
 [tkim@kepler rtl_students]:
 ```
-
-
-
-
-
 
 #### Part 2. Synthesis and layout for GCD
 After you finished your RTL design, then you need to synthesize with Design Compiler and generate a layout with IC Compiler.
