@@ -799,7 +799,7 @@ vcs -PP +lint=all,noVCDE +v2k -timescale=1ns/10ps +define+CLOCK_PERIOD=0.5 gcd_r
 ```
 
 
-If your RTL still has error, then your `simv` result will be the following
+If your RTL still has error, then your `./simv +verbose=1` result will be the following
 ```
 [tkim@kepler rtl_students]:./simv +verbose=1
 Chronologic VCS simulator copyright 1991-2015
