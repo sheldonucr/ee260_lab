@@ -867,7 +867,7 @@ create_clock clk -name idea_clock1 -period 1
 
 - Instead of `compiler` in Design Compiler, you use faster compiler variants (`compiler_ultra`) with clock option.
 ```
-compiler_ultra -gate_clock -no_autoungroup
+compile_ultra -gate_clock -no_autoungroup
 ```
 
 ###### IC Compiler Changes for GCD.
