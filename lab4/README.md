@@ -870,7 +870,7 @@ create_clock clk -name idea_clock1 -period 1
 compile_ultra -gate_clock -no_autoungroup
 ```
 
-- When you write a synthesized file and ddc file, you need to have a `-hierachy` option
+- When you write a synthesized file and ddc file, you need to have a `-hierarchy` option
 
 ```
 write -format ddc -hierarchy -output "OUTPUTFILE.ddc"
