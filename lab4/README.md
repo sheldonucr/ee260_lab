@@ -858,11 +858,24 @@ After you finished your RTL design, then you need to synthesize with Design Comp
 
 GCD requires clock and you also need to synthesize clock tree. For your GCD, every step is __the same as above 4-bit full adder steps__ from RTL to Layout except the following extra steps.
 
-###### Design Compiler Changes for GCD.
+###### Design Compiler Changes for GCD (you need to follow above 4-bit fulladder example for this step except the following extra steps)
+
+- For analyze, you need to use the command for multiple verilog file
+```
+analyze -format verilog "gcd_ctrl.v gcd_dpath.v gcd_rtl.v"
+```
+
+- For elaborate, you can use top-level design block name
+```
+elaborate "gcdGCDUnit_rtl"
+```
+
+
+
 
 - After `check_design` in Design Compiler, you need to build clock period constraint as extra step before compile
 ```
-create_clock clk -name idea_clock1 -period 1
+create_clock clk -name ideal_clock1 -period 1
 ```
 
 - Instead of `compiler` in Design Compiler, you use faster compiler variants (`compiler_ultra`) with clock option.
@@ -873,11 +886,11 @@ compile_ultra -gate_clock -no_autoungroup
 - When you write a synthesized file and ddc file, you need to have a `-hierarchy` option
 
 ```
-write -format ddc -hierarchy -output "OUTPUTFILE.ddc"
+write -format ddc -hierarchy -output "gcdGCDUnit_rtl_synthesized.ddc"
 ```
 
 ```
-write -f verilog -hierarchy -output "OUTPUTFILE_synthesized.v"
+write -f verilog -hierarchy -output "gcdGCDUnit_rtl_synthesized.v"
 ```
 
 
