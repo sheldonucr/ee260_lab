@@ -951,9 +951,9 @@ _**Fig. 51. Final GCD Layout**_
 
 
 
-## Lab4-Week3 (Incomplete) : Full-chip synthesis design and layout for Synopsys ChipTop processor with Timing, Area, and Power Analysis
+## Lab4-Week3 (Incomplete) : Timing, Area, and Power Analysis and Full-chip synthesis design (Optional)
 
-### Summary of what you did for lab4-week1
+### Whole RTL and Layout Design Process
 
 ![Fig. 50](images/synopsys_tool_flow.png)
 
