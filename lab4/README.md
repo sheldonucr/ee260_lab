@@ -951,13 +951,406 @@ _**Fig. 51. Final GCD Layout**_
 
 
 
-## Lab4-Week3 (Incomplete) : Full-chip synthesis design and layout for Synopsys ChipTop processor with Timing, Area, and Power Analysis of PrimeTime
+## Lab4-Week3 (Incomplete) : Full-chip synthesis design and layout for Synopsys ChipTop processor with Timing, Area, and Power Analysis
 
 ### Summary of what you did for lab4-week1
 
 ![Fig. 50](images/synopsys_tool_flow.png)
 
 _**Fig. 50. Full RTL and Physical Toolflow for IC design**_
+
+Let's get some timing, area, power reports from Design Compiler.
+
+You need to re-run all design compiler step first for your GCD design.
+
+After `compile_ultra` step, you need to have more steps to generate report
+
+Let's see timing report.
+
+```
+report_timing -transition_time -nets -attributes -nosplit
+```
+
+Then you can see timing report.
+
+```
+Information: Updating design information... (UID-85)
+
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nets
+        -max_paths 1
+        -transition_time
+Design : gcdGCDUnit_rtl
+Version: K-2015.06-SP4
+Date   : Sat Mar  5 08:19:55 2016
+****************************************
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ
+Wire Load Model Mode: top
+
+  Startpoint: GCDdpath0/B_reg_reg[4]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: GCDdpath0/clk_gate_A_reg_reg/latch
+            (positive level-sensitive latch clocked by ideal_clock1')
+  Path Group: ideal_clock1
+  Path Type: max
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                                       Fanout     Trans      Incr       Path      Attributes
+  ---------------------------------------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                                    0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  GCDdpath0/B_reg_reg[4]/CLK (DFFARX1)                    0.00      0.00       0.00 r
+  GCDdpath0/B_reg_reg[4]/Q (DFFARX1)                      0.04      0.24       0.24 f
+  GCDdpath0/B_reg[4] (net)                      4                   0.00       0.24 f
+  GCDdpath0/U114/QN (NOR2X1)                              0.06      0.04       0.28 r
+  GCDdpath0/n189 (net)                          3                   0.00       0.28 r
+  GCDdpath0/U115/QN (AOINVX1)                             0.03      0.03       0.30 f
+  GCDdpath0/n35 (net)                           1                   0.00       0.30 f
+  GCDdpath0/U116/QN (NOR2X0)                              0.05      0.03       0.33 r
+  GCDdpath0/n36 (net)                           1                   0.00       0.33 r
+  GCDdpath0/U118/QN (NOR2X1)                              0.05      0.04       0.37 f
+  GCDdpath0/n130 (net)                          3                   0.00       0.37 f
+  GCDdpath0/U36/QN (NOR2X1)                               0.04      0.03       0.40 r
+  GCDdpath0/n39 (net)                           1                   0.00       0.40 r
+  GCDdpath0/U121/Q (OR3X1)                                0.05      0.08       0.48 r
+  GCDdpath0/n40 (net)                           1                   0.00       0.48 r
+  GCDdpath0/U35/QN (NOR2X2)                               0.05      0.05       0.52 f
+  GCDdpath0/n84 (net)                           2                   0.00       0.52 f
+  GCDdpath0/U159/QN (NOR2X2)                              0.06      0.04       0.56 r
+  GCDdpath0/n85 (net)                           1                   0.00       0.56 r
+  GCDdpath0/U160/QN (NOR2X4)                              0.04      0.04       0.60 f
+  GCDdpath0/N5 (net)                            4                   0.00       0.60 f
+  GCDdpath0/A_lt_B (gcdGCDUnitDpath_W16)                            0.00       0.60 f
+  A_lt_B (net)                                                      0.00       0.60 f
+  GCDctrl0/A_lt_B (gcdGCDUnitCtrl)                                  0.00       0.60 f
+  GCDctrl0/A_lt_B (net)                                             0.00       0.60 f
+  GCDctrl0/U8/QN (NAND2X2)                                0.04      0.02       0.62 r
+  GCDctrl0/n6 (net)                             2                   0.00       0.62 r
+  GCDctrl0/U9/QN (NAND2X0)                                0.05      0.04       0.67 f
+  GCDctrl0/B_en (net)                           2                   0.00       0.67 f
+  GCDctrl0/U10/QN (AOINVX1)                               0.03      0.03       0.69 r
+  GCDctrl0/n4 (net)                             1                   0.00       0.69 r
+  GCDctrl0/U13/QN (NAND2X1)                               0.03      0.03       0.72 f
+  GCDctrl0/A_en (net)                           1                   0.00       0.72 f
+  GCDctrl0/A_en (gcdGCDUnitCtrl)                                    0.00       0.72 f
+  A_en (net)                                                        0.00       0.72 f
+  GCDdpath0/A_en (gcdGCDUnitDpath_W16)                              0.00       0.72 f
+  GCDdpath0/A_en (net)                                              0.00       0.72 f
+  GCDdpath0/clk_gate_A_reg_reg/EN (SNPS_CLOCK_GATE_HIGH_gcdGCDUnitDpath_W16_1)     0.00     0.72 f
+  GCDdpath0/clk_gate_A_reg_reg/net151 (net)                         0.00       0.72 f
+  GCDdpath0/clk_gate_A_reg_reg/latch/D (LATCHX1)          0.03      0.00       0.72 f
+  data arrival time                                                            0.72
+
+  clock ideal_clock1' (rise edge)                                   0.50       0.50
+  clock network delay (ideal)                                       0.00       0.50
+  GCDdpath0/clk_gate_A_reg_reg/latch/CLK (LATCHX1)                  0.00       0.50 r
+  time borrowed from endpoint                                       0.22       0.72
+  data required time                                                           0.72
+  ---------------------------------------------------------------------------------------------------------
+  data required time                                                           0.72
+  data arrival time                                                           -0.72
+  ---------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                  0.00
+
+  Time Borrowing Information
+  ------------------------------------------------------------------------
+  ideal_clock1' nominal pulse width                                 0.50   
+  library setup time                                               -0.10   
+  ------------------------------------------------------------------------
+  max time borrow                                                   0.40   
+  actual time borrow                                                0.22   
+  ------------------------------------------------------------------------
+
+```
+
+You can go to terminal/output window and copy above report and paste into your lab report for timing analysis.
+
+Next, we can see area report
+
+```
+report_area -nosplit -hierarchy
+```
+
+then, you can see the report
+```
+****************************************
+Report : area
+Design : gcdGCDUnit_rtl
+Version: K-2015.06-SP4
+Date   : Sat Mar  5 08:23:57 2016
+****************************************
+
+Library(s) Used:
+
+    saed90nm_typ (File: /usr/local/synopsys/pdk/SAED90_EDK/SAED_EDK90nm_REF/references/ChipTop/ref/saed90nm_fr/LM/saed90nm_typ.db)
+
+Number of ports:                          130
+Number of nets:                           461
+Number of cells:                          326
+Number of combinational cells:            285
+Number of sequential cells:                37
+Number of macros/black boxes:               0
+Number of buf/inv:                         36
+Number of references:                       2
+
+Combinational area:               1992.904015
+Buf/Inv area:                      205.527008
+Noncombinational area:            1126.194016
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                  3119.098031
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  ----------------------------
+Hierarchical cell                 Absolute   Percent  Combi-     Noncombi-  Black-
+                                  Total      Total    national   national   boxes   Design
+--------------------------------  ---------  -------  ---------  ---------  ------  ------------------------------------------
+gcdGCDUnit_rtl                    3119.0980    100.0     0.0000     0.0000  0.0000  gcdGCDUnit_rtl
+GCDctrl0                           193.3050      6.2   143.5390    49.7660  0.0000  gcdGCDUnitCtrl
+GCDdpath0                         2925.7930     93.8  1823.4150  1032.1920  0.0000  gcdGCDUnitDpath_W16
+GCDdpath0/clk_gate_A_reg_reg        35.0930      1.1    12.9750    22.1180  0.0000  SNPS_CLOCK_GATE_HIGH_gcdGCDUnitDpath_W16_1
+GCDdpath0/clk_gate_B_reg_reg        35.0930      1.1    12.9750    22.1180  0.0000  SNPS_CLOCK_GATE_HIGH_gcdGCDUnitDpath_W16_0
+--------------------------------  ---------  -------  ---------  ---------  ------  ------------------------------------------
+Total                                                 1992.9040  1126.1940  0.0000
+
+
+```
+
+You can go to terminal/output window and copy above report and paste into your lab report for area analysis.
+
+Third, you can see power analysis,
+
+```
+report_power -nosplit -hierarchy
+```
+
+Then, you can see power report for each block for Switching/Dynamic/Leaking Powers
+
+```
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : gcdGCDUnit_rtl
+Version: K-2015.06-SP4
+Date   : Sat Mar  5 08:26:58 2016
+****************************************
+
+
+Library(s) Used:
+
+    saed90nm_typ (File: /usr/local/synopsys/pdk/SAED90_EDK/SAED_EDK90nm_REF/references/ChipTop/ref/saed90nm_fr/LM/saed90nm_typ.db)
+
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+gcdGCDUnit_rtl                            0.140    0.926 1.06e+07    1.077 100.0
+  GCDctrl0 (gcdGCDUnitCtrl)            9.74e-03 5.17e-02 5.34e+05 6.20e-02   5.8
+  GCDdpath0 (gcdGCDUnitDpath_W16)         0.130    0.875 1.01e+07    1.015  94.2
+```
+You can go to terminal/output window and copy above report and paste into your lab report for power analysis.
+
+For more information of standard cell area report, you need to type the following command
+
+```
+report_reference -nosplit -hierarchy
+```
+
+```
+****************************************
+Report : reference
+Design : gcdGCDUnit_rtl
+Version: K-2015.06-SP4
+Date   : Sat Mar  5 08:29:21 2016
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+gcdGCDUnitCtrl                  193.305001       1    193.305001  h, n
+gcdGCDUnitDpath_W16            2925.793030       1   2925.793030  h, n
+-----------------------------------------------------------------------------
+Total 2 references                                   3119.098031
+
+****************************************
+Design: gcdGCDUnitCtrl
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1             saed90nm_typ     7.445000       1     7.445000
+AOI22X1            saed90nm_typ    12.902000       1    12.902000
+AOINVX1            saed90nm_typ     6.451000       2    12.902000
+DFFX1              saed90nm_typ    24.882999       2    49.765999 n
+INVX0              saed90nm_typ     5.530000       1     5.530000
+INVX2              saed90nm_typ     6.451000       1     6.451000
+ISOLANDX1          saed90nm_typ     7.373000       1     7.373000
+ISOLORX1           saed90nm_typ     7.387000       1     7.387000
+NAND2X0            saed90nm_typ     5.443000       4    21.771999
+NAND2X1            saed90nm_typ     5.501000       1     5.501000
+NAND2X2            saed90nm_typ     8.798000       1     8.798000
+NOR2X0             saed90nm_typ     5.530000       4    22.120001
+NOR2X1             saed90nm_typ     6.005000       1     6.005000
+NOR3X0             saed90nm_typ     8.294000       1     8.294000
+OAI21X1            saed90nm_typ    11.059000       1    11.059000
+-----------------------------------------------------------------------------
+Total 15 references                                   193.305001
+
+****************************************
+Design: gcdGCDUnitDpath_W16
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1             saed90nm_typ     7.445000      17   126.565003
+AND4X1             saed90nm_typ    10.123000       1    10.123000
+AO21X1             saed90nm_typ    10.138000       2    20.275999
+AOINVX1            saed90nm_typ     6.451000       1     6.451000
+AOINVX2            saed90nm_typ     6.451000       1     6.451000
+DFFARX1            saed90nm_typ    32.256001      32  1032.192017 n
+INVX0              saed90nm_typ     5.530000      26   143.780005
+INVX2              saed90nm_typ     6.451000       2    12.902000
+ISOLANDX1          saed90nm_typ     7.373000       1     7.373000
+ISOLORX1           saed90nm_typ     7.387000       1     7.387000
+MUX21X1            saed90nm_typ    11.059000      16   176.944000
+NAND2X0            saed90nm_typ     5.443000      49   266.706992
+NAND2X1            saed90nm_typ     5.501000      31   170.530998
+NAND2X2            saed90nm_typ     8.798000       3    26.394001
+NAND3X0            saed90nm_typ     7.373000       1     7.373000
+NOR2X0             saed90nm_typ     5.530000      62   342.860013
+NOR2X1             saed90nm_typ     6.005000       8    48.040001
+NOR2X2             saed90nm_typ     9.216000       9    82.943996
+NOR2X4             saed90nm_typ    14.731000       2    29.462000
+NOR3X0             saed90nm_typ     8.294000       1     8.294000
+NOR4X0             saed90nm_typ     9.216000       3    27.647999
+NOR4X1             saed90nm_typ    15.638000       1    15.638000
+OA21X1             saed90nm_typ     9.216000       1     9.216000
+OR3X1              saed90nm_typ     9.230000       3    27.689999
+OR3X2              saed90nm_typ    11.030000       1    11.030000
+OR4X1              saed90nm_typ    10.152000       1    10.152000
+SNPS_CLOCK_GATE_HIGH_gcdGCDUnitDpath_W16_0    35.093000       1    35.093000 h, n
+SNPS_CLOCK_GATE_HIGH_gcdGCDUnitDpath_W16_1    35.093000       1    35.093000 h, n
+XNOR2X1            saed90nm_typ    13.824000       4    55.296001
+XOR2X1             saed90nm_typ    13.824000      12   165.888004
+-----------------------------------------------------------------------------
+Total 30 references                                  2925.793030
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_gcdGCDUnitDpath_W16_0
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1             saed90nm_typ     7.445000       1     7.445000
+INVX0              saed90nm_typ     5.530000       1     5.530000
+LATCHX1            saed90nm_typ    22.118000       1    22.118000 n
+-----------------------------------------------------------------------------
+Total 3 references                                     35.093000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_gcdGCDUnitDpath_W16_1
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1             saed90nm_typ     7.445000       1     7.445000
+INVX0              saed90nm_typ     5.530000       1     5.530000
+LATCHX1            saed90nm_typ    22.118000       1    22.118000 n
+-----------------------------------------------------------------------------
+Total 3 references                                     35.093000
+```
+
+You can go to terminal/output window and copy above report and paste into your lab report for standard-cell area analysis.
+
+
+Finally, you can get some detail rtl design resource report.
+
+```
+report_resources -nosplit -hierarchy
+```
+
+Then, the report is like below.
+
+```
+****************************************
+Report : resources
+Design : gcdGCDUnit_rtl
+Version: K-2015.06-SP4
+Date   : Sat Mar  5 08:32:06 2016
+****************************************
+
+
+No resource sharing information to report.
+
+No implementations to report
+
+****************************************
+Design : gcdGCDUnitCtrl
+****************************************
+
+No implementations to report
+
+****************************************
+Design : gcdGCDUnitDpath_W16
+****************************************
+
+Resource Report for this hierarchy in file ./gcd_dpath.v
+=============================================================================
+| Cell           | Module         | Parameters | Contained Operations       |
+=============================================================================
+| sub_x_2        | DW01_sub       | width=16   | sub_45 (gcd_dpath.v:45)    |
+| lt_x_3         | DW_cmp         | width=16   | lt_51 (gcd_dpath.v:51)     |
+=============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| sub_x_2            | DW01_sub         | pparch (area,speed)                 |
+| lt_x_3             | DW_cmp           | pparch (area,speed)                 |
+===============================================================================
+```
+
+### Post analysis with PrimeTime
 
 So far, we used Verilog Compiler Simulator (VCS) for RTL simulation, Design Compiler for Logic Synthesis, and IC Compiler for Layout. Now, we will use PrimeTime which is signoff tool and enable accurate delay and power estimations.
 
@@ -967,7 +1360,61 @@ It delivers HSPICE accurate signoff analysis that helps pinpoint problems prior 
 
 - See more at: http://www.synopsys.com/Tools/Implementation/SignOff/Pages/PrimeTime.aspx#sthash.qfYroAvS.dpuf
 
+To run primetime, you can type the following Tools
 
+```
+pt_shell
+```
+
+To start GUI, you need to type the following command.
+
+```
+gui_start
+```
+
+Set the power analysis and read your saved verilog from last step of IC Compier.
+
+```
+set target_library "/usr/local/synopsys/pdk/SAED90_EDK/SAED_EDK90nm_REF/references/ChipTop/ref/saed90nm_fr/LM/saed90nm_typ.db"
+
+set link_path "/usr/local/synopsys/pdk/SAED90_EDK/SAED_EDK90nm_REF/references/ChipTop/ref/saed90nm_fr/LM/saed90nm_typ.db"
+
+set power_enable_analysis "true"
+
+read_verilog "gcdGCDUnit_rtl.output.v "
+
+current_design "gcdGCDUnit_rtl"
+
+link
+
+```
+
+After importing your Post Verilog Design.
+```
+set power_analysis_mode "averaged"
+```
+
+```
+report_switching_activity -list_not_annotated
+```
+
+```
+read_parasitics -increment -format sbpf "gcdGCDUnit_rtl.output.sbpf.max"
+```
+
+```
+report_power -verbose -hierarchy
+```
+
+
+
+### Full-chip synthesis (Incomplete)
+
+To implement fullchip, we can use OpenSource core website to get IPs.
+
+```
+
+```
 
 
 
@@ -1004,11 +1451,17 @@ In this lab4, we introduce Synopsys RTL design toolkit, which are VCS, Design Co
 
   * Final Layout in Figure 51
 
----- week 2 check off
+---- until here for week 2 check off
 
-* week 3 checkoff
+---- week 3 checkoff
 
-  * TBA
+  * 5 design compiler report (timing, power, area, reference, and resource)
+
+  * Primetime power report (after run `report_power` at the last step)
+
+---- until here for week 3 check off
+
+  * (Optional) FullChip Synthesis (+extra credit)
 
 * Some of the issues if you have (One paragraph)
 
