@@ -951,7 +951,7 @@ _**Fig. 51. Final GCD Layout**_
 
 
 
-## Lab4-Week3 (Incomplete) : Timing, Area, and Power Analysis and Full-chip synthesis design (Optional)
+## Lab4-Week3 : Timing, Area, and Power Analysis and Full-chip synthesis design (Optional)
 
 ### Whole RTL and Layout Design Process
 
