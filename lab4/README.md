@@ -1065,11 +1065,11 @@ Attributes:
 
   Time Borrowing Information
   ------------------------------------------------------------------------
-  ideal_clock1' nominal pulse width                                 0.50   
-  library setup time                                               -0.10   
+  ideal_clock1' nominal pulse width                                 0.50
+  library setup time                                               -0.10
   ------------------------------------------------------------------------
-  max time borrow                                                   0.40   
-  actual time borrow                                                0.22   
+  max time borrow                                                   0.40
+  actual time borrow                                                0.22
   ------------------------------------------------------------------------
 
 ```
@@ -1162,7 +1162,7 @@ Operating Conditions: TYPICAL   Library: saed90nm_typ
 Wire Load Model Mode: top
 
 
-Global Operating Voltage = 1.2  
+Global Operating Voltage = 1.2
 Power-specific unit information :
     Voltage Units = 1V
     Capacitance Units = 1.000000pf
@@ -1408,15 +1408,19 @@ report_power -verbose -hierarchy
 
 
 
-### Full-chip synthesis (Incomplete)
+### Full-chip synthesis (extra-credit)
 
 To implement fullchip, we can use OpenSource core website to get IPs.
 
 ```
-
+http://opencores.org/
 ```
 
+If you see the projects, there is processor section. If you earn the extra-credit, you can download any processor RTL design and try to synthesize and transfer gate to layout.
 
+Once you finish this work, turn in your layout to TA.
+your total lab score will increase by 20%.
+You can use any external resources for this extra work.
 
 ## Lab4 Logistics
 
