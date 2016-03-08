@@ -1416,6 +1416,17 @@ To implement fullchip, we can use OpenSource core website to get IPs.
 http://opencores.org/
 ```
 
+#### Useful examples
+
+- OpenRISC 1200 processor example
+
+[Here](http://venividiwiki.ee.virginia.edu/mediawiki/index.php/Specialized_SHA-256_Accelerator)
+
+- OpenMSP430 processor example
+
+[Here](http://venividiwiki.ee.virginia.edu/mediawiki/index.php/MSP430PeriphsandPG)
+
+
 If you see the projects, there is processor section. If you earn the extra-credit, you can download any processor RTL design and try to synthesize and transfer gate to layout.
 
 Once you finish this work, turn in your layout to TA.
