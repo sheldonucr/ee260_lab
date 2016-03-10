@@ -18,7 +18,7 @@ Every discussion/Q&A will be at https://github.com/tkimva/ucr-eecs168. Please us
 |Week 8		| [Lab/Tutorial 4 - RTL Synthesis Design (Design Compiler/IC Compiler/PrimeTime) (Target Circuit: 4-bit full adder)](https://github.com/tkimva/ucr-eecs168/tree/master/lab4)|| 35 |
 |Week 9		| [Lab/Tutorial 4 - Complex RTL Synthesis Design  (Target Circuit: Euclid's Algorithm for GCD)](https://github.com/tkimva/ucr-eecs168/tree/master/lab4)| 	|  |
 |Week 10	| [Lab/Tutorial 4 - Full Chip RTL Synthesis Design	(Target Circuit: Core Design)](https://github.com/tkimva/ucr-eecs168/tree/master/lab4)|  |  |
-|Final Week | No lab |  |Lab4 report due by Thursday.  | |
+|Final Week | No lab |  |Lab4 report due by Monday.  | |
 
 ### Attendance Policy
 
