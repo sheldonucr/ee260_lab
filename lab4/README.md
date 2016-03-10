@@ -1507,7 +1507,7 @@ for example, my ucr Net ID is `tkim049`, so do like following
 ### Lab Report Due
 
 * eecs168-021: by 11:59pm on 3/14
-* eecs168-022: by 11:59pm on 3/16
+* eecs168-022: by 11:59pm on 3/14
 
 ### Checkoff
 
