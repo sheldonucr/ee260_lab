@@ -1486,7 +1486,7 @@ In this lab4, we introduce Synopsys RTL design toolkit, which are VCS, Design Co
 
 file name should be following
 
-`lab3-[My UCR NET ID].pdf`
+`lab4-[My UCR NET ID].pdf`
 
 for example, my UCR Net ID is `tkim049`, so filename should be
 
