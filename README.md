@@ -6,7 +6,7 @@ Every discussion/Q&A will be at https://github.com/tkimva/ee260_lab. Please use 
 
 ### Chapter
 
-| # | Title | Remark | Description |
+| # | Title | Remark | 
 | ---- | ---- | -------|
 | 1	|	[Pre-Lab - ENGR account checkup / Linux System Basic](lab0)	| | 
 | 2	| [Lab/Tutorial 1 - Synopsys Schematic Design (Galaxy Custom Designer)/ Pre-Simulation (HSPICE)](lab1)	| |
