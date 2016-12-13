@@ -80,15 +80,15 @@ testbench at the end of the tutorial.
 
 - RTL Source code:
 
-[counter.v](https://raw.githubusercontent.com/tkimva/ucr-eecs168/master/lab4/counter.v)
+[counter.v](https://raw.githubusercontent.com/tkimva/ee260_lab/master/lab4/counter.v)
 
 - Testbench of RTL:
 
-[counter_tb.v](https://raw.githubusercontent.com/tkimva/ucr-eecs168/master/lab4/counter_tb.v)
+[counter_tb.v](https://raw.githubusercontent.com/tkimva/ee260_lab/master/lab4/counter_tb.v)
 
 From server, you can create your RTL folder and download
 
-Under your eecs168 folder,
+Under your ee260 folder,
 
 ```
 mkdir lab4-rtl
@@ -100,8 +100,8 @@ cd counter
 and download two files
 
 ```
-wget https://raw.githubusercontent.com/tkimva/ucr-eecs168/master/lab4/counter.v
-wget https://raw.githubusercontent.com/tkimva/ucr-eecs168/master/lab4/counter_tb.v
+wget https://raw.githubusercontent.com/tkimva/ucr-ee260_lab/master/lab4/counter.v
+wget https://raw.githubusercontent.com/tkimva/ucr-ee260_lab/master/lab4/counter_tb.v
 ```
 
 1. In the “lab4-rtl” directory, compile the verilog source code by typing the following at the
@@ -782,7 +782,7 @@ Total system block is look like below.
 We provide three following incomplete RTL designs (Verilog) from above behavioral code for GCD algorithm. You should complete this file to go next part.
 The code are needed at the following comment region
 ```
-// code here for EECS168
+// code here for EE260
 ```
 
 - GCD Top Design: `gcd_rtl.v`
@@ -793,7 +793,7 @@ The code are needed at the following comment region
 
 _**GCD RTL Design Block**_
 
-you need to download incomplete GCD RTL design [here](https://raw.githubusercontent.com/tkimva/ucr-eecs168/master/lab4/GCD_RTL.tgz)
+you need to download incomplete GCD RTL design [here](https://raw.githubusercontent.com/tkimva/ee260_lab/master/lab4/GCD_RTL.tgz)
 
 
 
@@ -1444,75 +1444,3 @@ This work design for three weeks lab, so for your lab report, you need to design
 
 In this lab4, we introduce Synopsys RTL design toolkit, which are VCS, Design Compiler, IC Compiler, VCS RTL Verification solution.
 
-### Deliverables for your lab report.
-
-* Name, SID, Session(021,022), ENGR ID, UCR NetID, your partner name
-
----- week1 checkoff from here
-
-  * Answers of all the questions from Verilog tutorial in Chapter 1 to 5.
-
-  * Simulation result of example counter.
-
-  * The result of gate-level for 4-bit full adder, fa_4bit_synthesized.v
-
-  * Final layout in Fig 49 for 4-bit full adder.
-
----- until here for week1 check off
-
----- week 2 checkoff
-
-  * Complete three Verilog file (gcd_rtl.v gcd_dpath.v gcd_ctrl.v)
-
-  * Final Layout in Figure 51
-
----- until here for week 2 check off
-
----- week 3 checkoff
-
-  * 5 design compiler report (timing, power, area, reference, and resource)
-
-  * Primetime power report (after run `report_power` at the last step)
-
----- until here for week 3 check off
-
-  * (Optional) FullChip Synthesis (+extra credit)
-
-* Some of the issues if you have (One paragraph)
-
-### What to submit
-
-* Lab report (PDF format)
-
-file name should be following
-
-`lab4-[My UCR NET ID].pdf`
-
-for example, my UCR Net ID is `tkim049`, so filename should be
-
-`lab4-tkim049.pdf`
-
-* Tar and Zip your design folder you made
-
-`cd ~/eecs168/lab4-rtl` or you made
-
-`tar -cvzf lab4-[My UCR NET ID].tgz ./`
-
-for example, my ucr Net ID is `tkim049`, so do like following
-
-`tar -cvzf lab4-tkim049.tgz ./`
-
-* You need to submit two files (\*.pdf, \*.tgz) in iLearn
-
-### Lab Report Due
-
-* eecs168-021: by 11:59pm on 3/14
-* eecs168-022: by 11:59pm on 3/14
-
-### Checkoff
-
-* First week: Refer above deliverables
-
-* Second week: Refer above deliverables
-
-* Three week: Refer above deliverables

@@ -22,16 +22,16 @@ For the rest four parts (Lab 2), you will use Custom Designer to create a layout
 You need to login our `storm.engr.ucr.edu` server first. If you do not know how to connect our server, please check out [lab1](../lab0)
 
 
-You can use your home folder (`~ or /home/[Account Name]`, in the example, [Account Name will be `tkim` or `zsun`, you need to use your own account) or you can create a new folder to have your design for this eecs168 course. To create your design folder, you need to type followings. The first command let you move your home folder, and `mkdir` command is to create your folder.
+You can use your home folder (`~ or /home/[Account Name]`, in the example, [Account Name will be `tkim` or `zsun`, you need to use your own account) or you can create a new folder to have your design for this ee260 course. To create your design folder, you need to type followings. The first command let you move your home folder, and `mkdir` command is to create your folder.
 
 ```
 cd ~
-mkdir eecs168
+mkdir ee260
 ```
 
 Once you generate your workspace folder, you need to go to the folder
 ```
-cd eecs168
+cd ee260
 ```
 Then, you need to install Synopsys PDK ([Process Design Kit](https://en.wikipedia.org/wiki/Process_design_kit)) (technology library into your workspace as follows.
 
@@ -424,60 +424,6 @@ _**Fig. 43. a solution for warning**_
 ### Objective
 
 Lab 1 is to learn how to design your circuit, generate netlist, and simulate given netlist for your layout design in lab 2. You will learn three IC design tools (Custom Designer, Waveform View, HSPICE) in this lab and the followings are expected to be delivered in your lab report.
-
-### Deliverables for your lab report.
-
-* Name, SID, Session(021,022), ENGR ID, UCR NetID, your partner name
-
-* Summary of what you learned thru this lab (One paragraph)
-
-* An inverter schematic view as seen in Fig 13.
-
-* An inverter symbol view as seen in Fig 15.
-
-* A test-bench for your inverter design as seen in Fig 18.
-
-* A transient analysis waveform as seen in Fig. 28.
-
-* A DC Sweep analysis waveform as seen in Fig 29.
-
-* A delay measurement annotated waveform as seen in Fig 33.
-
-* A rise/fall measurement annotated waveform as seen in Fig 35.
-
-* An average measurement annotated waveform as seen in Fig. 37.
-
-* A frequency measurement annotated waveform as seen in Fig. 39.
-
-* Some of the issues if you have (One paragraph)
-
-### What to submit
-
-* Lab report (PDF format)
-
-file name should be following
-
-`lab1-[My UCR NET ID].pdf`
-
-for example, my UCR Net ID is `tkim049`, so filename should be
-
-`lab1-tkim049.pdf`
-
-* Tar and Zip your design folder you made
-
-`cd ~/eecs168` or you made
-
-`tar -cvzf lab1-[My UCR NET ID].tgz ./`
-
-for example, my ucr Net ID is `tkim049`, so do like following
-
-`tar -cvzf lab1-tkim049.tgz ./`
-
-* You need to submit two files (*.pdf, *.tgz) in iLearn
-
-### Lab Report Due
-
-* One week. 1/22 Friday 11:59pm.
 
 ### Next lab
 

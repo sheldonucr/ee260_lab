@@ -15,7 +15,7 @@ go to [github.com](http://github.com) and follow the screenshots below.
 
 ![github](images/lab0-07.png)
 
-After you register, you need to login and go to our lab repository [github.com/tkimva/ucr-eecs168](https://github.com/tkimva/ucr-eecs168). You need to press watching and star as seen below.
+After you register, you need to login and go to our lab repository [github.com/tkimva/ee260_lab](https://github.com/tkimva/ee260_lab). You need to press watching and star as seen below.
 
 ![github](images/lab0-08.png)
 

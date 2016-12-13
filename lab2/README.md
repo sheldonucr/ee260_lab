@@ -277,37 +277,6 @@ _**Fig. 66. Expected NAND Simulation Result**_
 
 * Some of the issues if you have (One paragraph)
 
-### What to submit
-
-* Lab report (PDF format)
-
-file name should be following
-
-`lab2-[My UCR NET ID].pdf`
-
-for example, my UCR Net ID is `tkim049`, so filename should be
-
-`lab2-tkim049.pdf`
-
-* Tar and Zip your design folder you made
-
-`cd ~/eecs168` or you made
-
-`tar -cvzf lab2-[My UCR NET ID].tgz ./`
-
-for example, my ucr Net ID is `tkim049`, so do like following
-
-`tar -cvzf lab2-tkim049.tgz ./`
-
-* You need to submit two files (\*.pdf, \*.tgz) in iLearn
-
-### Lab Report Due
-
-* One week.
-
-* eecs168-021: by 11:59pm on 2/1
-* eecs168-022: by 11:59pm on 1/28
-
 ### Next lab
 
 In lab 3, you will learn Parasitic Extraction, post-simulation with parasitic extraction, and Hierarchical design with 4-bit Full Adder. In addition, we will start to design Standard Cell for our full chip later.
